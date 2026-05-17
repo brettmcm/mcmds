@@ -1,0 +1,4 @@
+interface:
+  display_name: "mcmds"
+  short_description: "Match MCM Design Co. design style."
+  default_prompt: "Use $mcmds to create work that matches Brett McMillin and MCM Design Co. design sensibility, choosing the right channel guidance for the output."
