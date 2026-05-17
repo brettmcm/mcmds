@@ -85,9 +85,9 @@ Are two elements part of the same thought, task, or reading unit?
 
 ## Alignment
 
-Every output needs a clear alignment system. The exact grid changes by channel, but the edges should feel deliberate. Internal columns belong to their local section, spread, slide, frame, or component only.
+Every output needs a clear alignment system. The default MCM alignment system is an 8-column grid with a `1440px` maximum width and `48px` inner left and right padding. Channel-specific grids can adapt production details, but they should preserve this page-grid logic unless the medium makes it impossible.
 
-Avoid mixing unrelated column systems in the same view or page. A row of objects should start and end on the same field as the text that introduces it unless there is a clear reason to break alignment.
+Avoid mixing unrelated column systems in the same view or page. Internal columns belong to their local section, spread, slide, frame, or component only, and should resolve back to the shared 8-column field. A row of objects should start and end on the same field as the text that introduces it unless there is a clear reason to break alignment.
 
 ### Alignment Decision Flowchart
 
@@ -102,7 +102,7 @@ Does this element share the same role as nearby elements?
 
 ## When to Break the Grid
 
-Break the grid only when it increases meaning, pace, or emphasis. Asymmetry should feel intentional and anchored. Do not break the grid to make a thin idea look designed.
+Break the grid only when it increases meaning, pace, or emphasis. Asymmetry should feel intentional and anchored to the 8-column system. Do not break the grid to make a thin idea look designed, and do not use a grid break to introduce an unrelated page width.
 
 Good reasons to break the grid:
 

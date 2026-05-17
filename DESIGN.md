@@ -57,6 +57,10 @@ spacing:
   xxl: 112px
   editorial-gap: 144px
   copy-measure: 55-70ch
+grid:
+  columns: 8
+  maxWidth: 1440px
+  innerPaddingInline: 48px
 rounded:
   minimal: 4px
   standard: 6px
@@ -128,7 +132,9 @@ Use sentence case for visible text unless a channel or brand artifact has a deli
 
 ## Layout
 
-Use a shared alignment system for each composition. The exact grid changes by channel, but the principle stays stable: major content should share clear edges, local columns should not create accidental competing systems, and width changes should be intentional.
+Use a shared alignment system for each composition. The default MCM grid is a hard 8-column content grid with a maximum outer width of `1440px` and `48px` inner left and right padding. Major content should align to this grid unless a channel-specific production constraint makes that impossible.
+
+Within the 8-column grid, content can span any deliberate column range, but section starts, repeated objects, and local column systems must resolve back to the shared grid. Width changes should be intentional. Do not create accidental competing grids inside the same composition.
 
 Universal spacing rhythm:
 

@@ -58,21 +58,24 @@ Do not scale font size directly with viewport width. Ensure text never overlaps 
 
 ## Digital Layout
 
-Use spacious full-width sections and a consistent page grid. Define shared page gutters once and reuse them for every major section.
+Use spacious full-width sections and the MCM hard page grid. The default digital shell is an 8-column grid with a maximum outer width of `1440px` and `48px` inner left and right padding. Define the shell once and reuse it for every major section.
 
 Reference CSS values:
 
 - Desktop gutter: `48px`
 - Mobile gutter: `20px`
+- Page max width: `1440px`
+- Page columns: `8`
+- Page inner padding: `48px` left and right
 - Medium shell: `900px`
-- Default shell: `1200px`
+- Default shell: `1440px`
 - Expanded shell: `1440px`
 - Wide shell: `2000px`
 - Default section spacing: `112px`
 - Tight section spacing: `72px`
 - Copy measure: `68ch`
 
-Use one page-level content shell for comparable sections:
+Use one page-level content shell and grid for comparable sections:
 
 ```css
 .mcm-section {
@@ -83,12 +86,18 @@ Use one page-level content shell for comparable sections:
 .mcm-section > .mcm-section__inner {
   max-width: var(--mcm-page-max);
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(var(--mcm-grid-columns), minmax(0, 1fr));
+  column-gap: var(--mcm-grid-gap);
+  padding-inline: var(--mcm-grid-padding);
 }
 ```
 
-Put row and column layouts inside the shared shell. Do not let a two-column row, three-column row, intro section, or table section define its own outer width or alignment.
+Put row and column layouts inside the shared 8-column shell. Do not let a two-column row, three-column row, intro section, or table section define its own outer width or alignment. Smaller shells are allowed only as deliberate content constraints inside the grid, not as a replacement for the page grid.
 
-Prefer flexbox for page and section layout by default. Use CSS grid only when the content truly needs two-dimensional placement or explicit grid tracks.
+Use `.mcm-span-1` through `.mcm-span-8` for deliberate column spans in standalone HTML. Direct children of `.mcm-section__inner`, `.mcm-shell`, and `.mcm-grid` span all 8 columns by default.
+
+Use CSS grid for the page shell because the 8-column grid is a hard rule. Use flexbox inside grid spans when the local relationship is one-dimensional.
 
 ## Digital Patterns
 
