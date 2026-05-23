@@ -61,6 +61,42 @@ Avoid:
 - Unnecessary icon sets.
 - Text too close to trim or fold.
 
+## Agreements, SOWs, and Contract PDFs
+
+For agreements, statements of work, partner contracts, proposals, and other reference-driven PDFs, bias toward a tight editorial document system rather than a decorative brand piece. The job is to make terms easy to scan, compare, sign, and reuse.
+
+Use a cover-sheet structure when the document benefits from a clear first read:
+
+- Logo or partner lockup in the header with generous clear space.
+- A compact metadata block for document type, project, date, and prepared-for details.
+- A large but restrained title.
+- A short overview paragraph.
+- A key data strip for fee, delivery date, quantity, dates, or other decision-driving facts.
+- A simple `Contents` section when the document runs beyond a couple of pages.
+
+For repeated interior pages:
+
+- Give the header breathing room before the first content. Interior pages can use slightly less space than the cover, but should still feel deliberate.
+- Increase space before each new section title so sections do not blur together.
+- Use smaller, readable document type rather than oversized marketing type. Body, table, metadata, and signature text should remain normal tracking.
+- Let thin horizontal rules, spacing, and alignment create structure. Avoid decorative accent bars unless the accent itself carries meaning.
+
+For tables:
+
+- Use hairline rules for operational tables such as milestones, fees, and contents.
+- Do not draw a horizontal rule below the final row unless the table needs a total or closing boundary.
+- Keep table headers and labels in sentence case.
+- Right-align compact dates, fees, page numbers, and totals when comparison matters.
+- Avoid row rules in scope-of-work tables when grouping and spacing can carry the structure.
+- In scope-of-work tables, prefer two columns: a left grouping label and a right content cell. If multiple rows share the same group, show the group label once and leave subsequent left cells blank.
+- In the right content cell, put the item label first, then the description below it with a standard paragraph break.
+
+For agreement terms and signatures:
+
+- Keep terms short, direct, and readable. Avoid burying key fee, date, and approval language.
+- Signature sections should be quiet: party label, signature line, date, and name line with thin rules.
+- Leave enough vertical room for real signatures, but do not turn the signature area into a large visual feature.
+
 ## Imagery
 
 Use imagery at production-appropriate resolution. Crops should feel editorial and specific. Do not crop away meaning.

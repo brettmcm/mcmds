@@ -12,9 +12,9 @@ colors:
   dark-accent: "#e04f2f"
   dark-success: "#6f8b6a"
   dark-alert: "#d85a36"
-  light-canvas: "#f4f1ea"
-  light-surface: "#ebe7dd"
-  light-surface-raised: "#fffaf0"
+  light-canvas: "#ffffff"
+  light-surface: "#f3f3f3"
+  light-surface-raised: "#ffffff"
   light-ink: "#121411"
   light-muted: "#6f706a"
   light-tertiary: "#9a978d"
@@ -94,9 +94,9 @@ Dark roles:
 
 Light roles:
 
-- Canvas: `#f4f1ea`
-- Surface: `#ebe7dd`
-- Raised surface: `#fffaf0`
+- Canvas: `#ffffff`
+- Surface: `#f3f3f3`
+- Raised surface: `#ffffff`
 - Ink: `#121411`
 - Muted text: `#6f706a`
 - Tertiary text: `#9a978d`
@@ -128,7 +128,7 @@ Core hierarchy:
 
 Major large headlines may use negative letter spacing. Body copy, metadata, UI labels, tables, buttons, captions, annotations, and compact production text should use normal letter spacing.
 
-Use sentence case for visible text unless a channel or brand artifact has a deliberate reason to use another case. Do not add periods to titles, labels, or compact metadata unless they are complete sentences.
+Use sentence case for visible text unless the user explicitly defines another case for a specific artifact. Proper nouns, acronyms, and brand names may keep their correct casing, but do not use all-uppercase styling, all-caps labels, or CSS such as `text-transform: uppercase`. Do not add periods to titles, labels, or compact metadata unless they are complete sentences.
 
 ## Layout
 
@@ -146,7 +146,7 @@ Universal spacing rhythm:
 - Wide editorial gaps: `144px`
 - Comfortable text measure: `55-70ch`
 
-Use generous negative space for pace and emphasis, but keep related information visibly grouped. If a composition feels too dense, remove low-value content before adding decorative space.
+Use generous negative space for pace and emphasis, but keep related information visibly grouped. If a composition feels too dense, remove low-value content before adding decorative space. In reference documents such as agreements, SOWs, and operational PDFs, use a tighter rhythm with clear section starts, compact metadata, readable tables, and enough header breathing room to feel intentional.
 
 ## Elevation & Depth
 
@@ -175,6 +175,8 @@ Do not use generic abstract vector art as a substitute for subject matter. Do no
 
 Across channels, prefer low-friction objects: text links, thin rules, concise metadata, restrained tables, quiet captions, small marks, and simple containers. Use containment only when it improves comprehension.
 
+For document-style artifacts, let tables be structural instead of decorative. Prefer grouped labels, paragraph breaks inside cells, right-aligned dates or fees, and hairline rules only where they improve scanning. Do not default to bottom rules on final table rows.
+
 Cards, panels, frames, boxes, and image containers should not become the default architecture. They are useful for repeated objects, modular information, physical cards, contained tools, or intentionally framed artifacts.
 
 When a small accent mark is used as a bullet or source marker beside text, vertically center the mark with the associated type. The mark should feel optically attached to the line it labels, not pinned to the top of the row.
@@ -184,9 +186,11 @@ When a small accent mark is used as a bullet or source marker beside text, verti
 - Do let image, type, spacing, and contrast carry the experience.
 - Do use tight negative letter spacing for major large headlines.
 - Do keep body, metadata, captions, UI labels, and compact text at normal tracking.
+- Do keep visible type in sentence case unless a proper noun, acronym, or explicit user requirement says otherwise.
 - Do keep color roles consistent across channels.
 - Do preserve the same design personality in light, dark, print, and presentation contexts.
 - Don't default to cards, hero marquees, decorative gradients, ornamental vectors, generic icon grids, or visible grid overlays.
+- Don't use all-uppercase text, all-caps labels, or `text-transform: uppercase`.
 - Don't stretch editorial copy across the full available field.
 - Don't use orange as a broad theme.
 - Don't treat each channel as a separate brand.

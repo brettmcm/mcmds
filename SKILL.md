@@ -7,12 +7,17 @@ description: Apply Brett McMillin / MCM Design Co. design-system and brand-taste
 
 Use this skill to make generated work feel aligned with MCM Design Co.: editorial, image-led, restrained, culturally sharp, and built with product-design rigor. The system is channel-agnostic by default. Do not assume the output is a website or interface unless the task calls for that.
 
+This is the single source of truth for MCM Design Co. and Dusty Times work. When a user asks for Dusty Times, DTDS, or Dusty Times Design System guidance, use this skill and apply the Dusty Times identity layer in `BRAND.md` and the Dusty Times logo assets in `assets/logos/`.
+
+Across all channels, visible type should use sentence case unless the user explicitly defines another case for a specific artifact. Proper nouns, acronyms, and brand names may keep their correct casing, but never use all-uppercase styling, all-caps labels, or CSS such as `text-transform: uppercase` unless explicitly requested.
+
 ## Source Layers
 
 - `DESIGN.md` defines the universal design system: color, typography, spacing, proportion, shape, depth, imagery, and reusable primitives.
 - `BRAND.md` defines universal taste: creative judgment, restraint, rhythm, hierarchy, negative space, alignment, grid-breaking, imagery, and decision rules.
 - `CHANNELS/*.md` defines application guidance for a specific medium or output channel.
 - `assets/mcmds.css` is the reusable implementation asset for digital product, web, and HTML outputs.
+- `assets/logos/*.png` contains Dusty Times identity artwork for Dusty Times outputs.
 
 ## How to Use
 
@@ -25,6 +30,7 @@ Use this skill to make generated work feel aligned with MCM Design Co.: editoria
    - `CHANNELS/social-graphic.md` for social posts, campaign graphics, announcement tiles, thumbnails, and feed/carousel compositions.
 4. If no channel file exists for the requested medium, apply `DESIGN.md` and `BRAND.md`, then make conservative medium-specific decisions.
 5. If modifying an existing project, follow its established tokens, assets, accessibility patterns, and production constraints first, then apply MCM guidance where it fits.
+6. For Dusty Times work, use this same system with the Dusty Times identity layer and official Dusty Times logo artwork.
 
 ## Conflict Rules
 
@@ -46,6 +52,7 @@ Do not regenerate implementation assets blindly. Preserve hand-tuned CSS unless 
 Before finishing, verify the work against the correct layer:
 
 - Universal: does it preserve MCM color, type, proportion, restraint, and image logic?
+- Identity: if a logo appears, does it use the correct official artwork with enough contrast and clear space?
 - Brand: does it make a clear creative decision instead of defaulting to generic layout conventions?
 - Channel: does it satisfy the production requirements of the medium?
 - Output: does it remain legible, aligned, and useful at the sizes or contexts where it will actually be consumed?

@@ -54,6 +54,8 @@ Reference CSS values:
 - Body copy: `font-size: 20px` for editorial body, `16px` for compact UI
 - Mobile: reduce `h1` to `2rem`, `h2` to `1.75rem`, `h3` to `1.4rem`, and lead text to `22px`
 
+Use sentence case for headings, labels, navigation, buttons, metadata, table headers, captions, and status text unless the user explicitly defines another case for that exact artifact. Do not use all-uppercase text or CSS `text-transform: uppercase`.
+
 Do not scale font size directly with viewport width. Ensure text never overlaps images or adjacent content on mobile.
 
 ## Digital Layout
@@ -158,6 +160,7 @@ Before finishing frontend work, check:
 - The page follows the shared gutter and shell system.
 - Light and dark appearances both remain legible.
 - Major headings use tight tracking; body, metadata, and UI labels do not.
+- Headings, labels, navigation, buttons, metadata, and table headers avoid all caps and `text-transform: uppercase`.
 - Mobile layouts preserve readable type, visible contrast, and non-overlapping content.
 - Cards, icons, heroes, and decorative elements are justified by content rather than used as defaults.
 - If building or updating a local website or web app, use Codex's internal browser to verify the rendered UI.

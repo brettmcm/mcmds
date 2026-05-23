@@ -18,6 +18,23 @@ The system is not generic SaaS, not startup default, not decorative portfolio ma
 4. Keep editorial mood and practical clarity together. A piece can feel sharp without hiding the information someone came for.
 5. Preserve one personality across channels. A slide, print piece, web page, report, or social graphic should feel like the same system translated into a different medium.
 
+## Dusty Times Identity Layer
+
+Dusty Times work uses this same MCM system with Dusty Times as the subject and identity layer. It should feel editorial, image-led, restrained, culturally sharp, and built with the same product-design rigor, while letting Dusty Times content, off-road culture, print artifacts, and partner material become the subject signal.
+
+Use the PNG logo files in `assets/logos/` when a Dusty Times output needs official identity artwork. Do not recreate, redraw, recolor, distort, outline, add effects to, or typeset a replacement for the logo.
+
+Available Dusty Times assets:
+
+- `dusty-times-logo-primary-black.png`
+- `dusty-times-logo-primary-white.png`
+- `dusty-times-logo-stacked-black.png`
+- `dusty-times-logo-stacked-white.png`
+
+Use the primary logo for horizontal placements: document headers, nav bars, website headers, deck footers, report covers, sponsor strips, and layouts where the mark sits beside other horizontal content. Use the stacked logo for compact, centered, square, or vertical placements.
+
+Use black logos on light, warm, pale, or white backgrounds. Use white logos on dark, photographic, black, or high-contrast colored backgrounds. If the background is busy, place the logo on a quiet field or adjust the crop; do not add glows, shadows, strokes, or boxes only to rescue contrast. Keep clear space around the logo and preserve its original aspect ratio.
+
 ## Brand Taste Practical Tips
 
 | Scenario | Decision | Source category |
@@ -38,6 +55,8 @@ The system is not generic SaaS, not startup default, not decorative portfolio ma
 Use a small set of distinct levels: understated label, measured body copy, large section or cover heading, quiet list text, and compact metadata. A hierarchy is successful when the reader knows where to start without every heading becoming oversized.
 
 Major large headlines may use tight negative letter spacing. This helps large Indivisible headlines feel dense, confident, and editorial. Do not apply this behavior to body copy, metadata, button labels, table text, captions, footers, or compact production text.
+
+Keep visible text in sentence case unless the user explicitly defines another case for a specific artifact. Proper nouns, acronyms, and brand names may keep their correct casing, but do not use all-uppercase styling, all-caps labels, or CSS such as `text-transform: uppercase`.
 
 ### Type Hierarchy Decision Flowchart
 
@@ -61,6 +80,7 @@ Is this the main idea, cover statement, or major section turn?
 | Every section feels equally loud | Demote repeated headings and let only major turns use display scale |
 | Body copy feels hard to read | Reduce measure before changing the typeface |
 | Metadata feels noisy | Use tertiary color, smaller size, and normal tracking |
+| A label feels too quiet | Improve size, weight, color, spacing, or placement instead of making it all caps |
 | A heading wraps awkwardly | Adjust measure or line breaks before shrinking it dramatically |
 
 ## Negative Space
