@@ -3,24 +3,29 @@ version: alpha
 name: MCM Design Co.
 description: A channel-agnostic design system for MCM Design Co. visual work across digital product, web, print, presentation, social, editorial, and graphic design applications.
 colors:
-  dark-canvas: "#080a09"
-  dark-surface: "#0f1110"
-  dark-surface-raised: "#151715"
-  dark-ink: "#f1f1ec"
-  dark-muted: "#8f8f8a"
-  dark-tertiary: "#5f625e"
-  dark-accent: "#e04f2f"
-  dark-success: "#6f8b6a"
-  dark-alert: "#d85a36"
+  dark-canvas: "#000000"
+  dark-surface: "#0b0d10"
+  dark-surface-raised: "#14171c"
+  dark-ink: "#d1d5db"
+  dark-interaction: "#ffffff"
+  dark-muted: "#9299a3"
+  dark-tertiary: "#626b77"
+  dark-accent: "#ff4b22"
+  dark-success: "#32d46d"
+  dark-alert: "#ff4d2e"
   light-canvas: "#ffffff"
-  light-surface: "#f3f3f3"
+  light-surface: "#f2f4f7"
   light-surface-raised: "#ffffff"
-  light-ink: "#121411"
-  light-muted: "#6f706a"
-  light-tertiary: "#9a978d"
-  light-accent: "#d84e31"
-  light-success: "#5f7d58"
-  light-alert: "#c84f34"
+  light-ink: "#30343b"
+  light-interaction: "#000000"
+  light-muted: "#626b77"
+  light-tertiary: "#9299a3"
+  light-accent: "#e63e18"
+  light-success: "#16803c"
+  light-alert: "#df2f16"
+  signal-lime: "#e7ff2a"
+  signal-cyan: "#55d6ff"
+  signal-pink: "#ff3d8d"
 typography:
   display:
     family: '"indivisible", "Indivisible", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
@@ -47,6 +52,16 @@ typography:
     weight: 500
     lineHeight: 1.1-1.3
     letterSpacing: 0
+  ui:
+    family: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+    weight: 400-600
+    lineHeight: 1.3-1.5
+    letterSpacing: 0
+  mono:
+    family: '"Departure Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace'
+    weight: 400
+    lineHeight: 1.2-1.4
+    letterSpacing: 0
 spacing:
   micro: 4px
   xs: 8px
@@ -57,10 +72,6 @@ spacing:
   xxl: 112px
   editorial-gap: 144px
   copy-measure: 55-70ch
-grid:
-  columns: 8
-  maxWidth: 1440px
-  innerPaddingInline: 48px
 rounded:
   minimal: 4px
   standard: 6px
@@ -72,49 +83,77 @@ rounded:
 
 ## Overview
 
-MCM Design Co. uses a restrained editorial system that can move across channels: digital product, websites, print, presentations, reports, social graphics, editorial layouts, and branded artifacts. The system should feel refined, grounded, culturally aware, and practical. It should avoid generic SaaS defaults, decorative portfolio maximalism, and cold technical layout.
+MCM Design Co. uses a restrained editorial system that can move across channels: digital product, websites, print, presentations, reports, social graphics, editorial layouts, and branded artifacts. The system should feel refined, grounded, culturally aware, and practical. It should avoid generic SaaS defaults, decorative portfolio maximalism, and cold technical layout that does not reveal subject matter, material, state, proof, or decision.
 
 This file defines the universal system. It should not carry channel-specific production mechanics. Use `CHANNELS/*.md` for medium-specific translation, such as CSS implementation, print bleed, slide layout, or social crop behavior.
 
 ## Colors
 
-The palette is built from high-contrast neutrals, quiet secondary grays, and a warm orange accent. Use the palette as a system of roles, not just fixed screen colors.
+The palette is built from pure black and white endpoints, quiet cool secondary grays, and a warm orange accent. Use the palette as a system of roles, not just fixed screen colors.
 
 Dark roles:
 
-- Canvas: `#080a09`
-- Surface: `#0f1110`
-- Raised surface: `#151715`
-- Ink: `#f1f1ec`
-- Muted text: `#8f8f8a`
-- Tertiary text: `#5f625e`
-- Accent: `#e04f2f`
-- Success: `#6f8b6a`
-- Alert: `#d85a36`
+- Canvas: `#000000`
+- Surface: `#0b0d10`
+- Raised surface: `#14171c`
+- Ink: `#d1d5db`
+- Interaction: `#ffffff`
+- Muted text: `#9299a3`
+- Tertiary text: `#626b77`
+- Accent: `#ff4b22`
+- Success: `#32d46d`
+- Alert: `#ff4d2e`
 
 Light roles:
 
 - Canvas: `#ffffff`
-- Surface: `#f3f3f3`
+- Surface: `#f2f4f7`
 - Raised surface: `#ffffff`
-- Ink: `#121411`
-- Muted text: `#6f706a`
-- Tertiary text: `#9a978d`
-- Accent: `#d84e31`
-- Success: `#5f7d58`
-- Alert: `#c84f34`
+- Ink: `#30343b`
+- Interaction: `#000000`
+- Muted text: `#626b77`
+- Tertiary text: `#9299a3`
+- Accent: `#e63e18`
+- Success: `#16803c`
+- Alert: `#df2f16`
 
-Use orange as a signal, not a theme. It is best for short rules, small marks, active states, critical emphasis, or focused calls to action. It should rarely dominate a composition.
+Use the appearance-dependent interaction endpoint—pure white in dark mode and pure black in light mode—for controls, focus, active navigation, and selected content when maximum state contrast is needed. Keep ordinary content on the duller ink role so interactive emphasis remains distinct.
 
-Light and dark expressions should feel like the same system under different ambient light. Light work should not become a soft beige brand. Dark work should not become a generic technical dashboard.
+Use orange as the primary MCM brand signal, not the default interaction color and not a theme. It is best for short rules, small marks, critical emphasis, data semantics, or a focused branded call to action. It should rarely dominate a composition.
+
+MCMDS-specific work may use a small secondary signal palette when the subject benefits from technical, operational, or atmospheric color:
+
+- Acid lime: `#e7ff2a` for status, performance, energy, power, or system-readout emphasis.
+- Screen cyan: `#55d6ff` for screen glow, cold electronic atmosphere, or ambient light.
+- Signal pink: `#ff3d8d` for contained poster, event, or image-treatment accents.
+
+These secondary accents are subordinate to the universal palette. Use one accent family at a time unless designing a genuine data/status system. Keep signal color scarce, functional, and below roughly 5-12% of the composition in most work.
+
+Light and dark expressions should feel like the same system under different ambient light. Use true white and true black for canvas and interaction endpoints; use slightly subdued cool-neutral ink for ordinary content. When an intermediate neutral needs a slight tint, keep it cool and blue-gray rather than beige, cream, brown, olive, or otherwise warm. Dark work may lean more technical for MCMDS-specific work, but it should still reveal subject matter, material, state, proof, or decision rather than becoming a generic sci-fi dashboard.
 
 ## Typography
 
-Prefer Indivisible as the primary type family:
+Use a role-based type system rather than one family for every job.
+
+Display and brand family:
 
 ```text
 "indivisible", "Indivisible", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
 ```
+
+Product interface family:
+
+```text
+"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+```
+
+Technical metadata family:
+
+```text
+"Departure Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace
+```
+
+Use Indivisible for brand expression, major display text, editorial leads, and large section turns. Use Inter for product UI, navigation, controls, dense content, and long-form workspace reading. Use Departure Mono for identifiers, measurements, timestamps, coordinates, codes, technical notation, system readouts, and currency figures in dense pricing or ledger tables. It may also carry calculated financial subtotals and totals when they belong to the same tabular system. Keep general summary metrics and key data values in the interface family unless they are genuine technical readouts. Do not use monospace merely to make an interface feel technical.
 
 Use channel files to translate type into CSS `rem`, print points, slide sizes, or platform-specific units.
 
@@ -125,16 +164,20 @@ Core hierarchy:
 - Lead: measured editorial copy or prominent explanatory text. Slight negative tracking may work at large sizes.
 - Body: readable long-form text. Use normal tracking and controlled measure.
 - Label: metadata, status, captions, annotations, navigation, and compact descriptors. Use normal tracking.
+- Product UI: compact navigation, controls, lists, dense content, and workspace reading. Default to `13px` to `16px`, `1.3` to `1.5` line height, and normal tracking.
+- Technical metadata: terse identifiers, measurements, timestamps, coordinates, codes, and system readouts. Default to `10px` to `12px`, normal tracking, and enough contrast to remain legible.
 
 Major large headlines may use negative letter spacing. Body copy, metadata, UI labels, tables, buttons, captions, annotations, and compact production text should use normal letter spacing.
 
-Use sentence case for visible text unless the user explicitly defines another case for a specific artifact. Proper nouns, acronyms, and brand names may keep their correct casing, but do not use all-uppercase styling, all-caps labels, or CSS such as `text-transform: uppercase`. Do not add periods to titles, labels, or compact metadata unless they are complete sentences.
+On compact operational surfaces, limit the visible type scale to roughly five functional roles: page title, section title, body, label, and technical data. Create additional hierarchy through weight, contrast, and spacing before introducing another size. Key data values should usually use medium weight rather than bold weight.
+
+Use sentence case for visible text unless a channel or brand artifact has a deliberate reason to use another case. Uppercase is allowed for terse technical readouts, coordinates, codes, and artifact-derived labels when casing carries operational meaning. Do not use uppercase as a general style for navigation, buttons, headings, or ordinary metadata. Do not add periods to titles, labels, or compact metadata unless they are complete sentences.
 
 ## Layout
 
-Use a shared alignment system for each composition. The default MCM grid is a hard 8-column content grid with a maximum outer width of `1440px` and `48px` inner left and right padding. Major content should align to this grid unless a channel-specific production constraint makes that impossible.
+Use a shared alignment system for each composition. The exact grid changes by channel, but the principle stays stable: major content should share clear edges, local columns should not create accidental competing systems, and width changes should be intentional.
 
-Within the 8-column grid, content can span any deliberate column range, but section starts, repeated objects, and local column systems must resolve back to the shared grid. Width changes should be intentional. Do not create accidental competing grids inside the same composition.
+Headers, main content, and footers or source notes that belong to one reading surface should share the same maximum width, gutters, and leading edge. A focused operational page may use a narrower centered workspace than an editorial page; `980px` is the preferred digital reference width for that pattern.
 
 Universal spacing rhythm:
 
@@ -146,7 +189,7 @@ Universal spacing rhythm:
 - Wide editorial gaps: `144px`
 - Comfortable text measure: `55-70ch`
 
-Use generous negative space for pace and emphasis, but keep related information visibly grouped. If a composition feels too dense, remove low-value content before adding decorative space. In reference documents such as agreements, SOWs, and operational PDFs, use a tighter rhythm with clear section starts, compact metadata, readable tables, and enough header breathing room to feel intentional.
+Use generous negative space for pace and emphasis, but keep related information visibly grouped. If a composition feels too dense, remove low-value content before adding decorative space.
 
 ## Elevation & Depth
 
@@ -175,9 +218,9 @@ Do not use generic abstract vector art as a substitute for subject matter. Do no
 
 Across channels, prefer low-friction objects: text links, thin rules, concise metadata, restrained tables, quiet captions, small marks, and simple containers. Use containment only when it improves comprehension.
 
-For document-style artifacts, let tables be structural instead of decorative. Prefer grouped labels, paragraph breaks inside cells, right-aligned dates or fees, and hairline rules only where they improve scanning. Do not default to bottom rules on final table rows.
-
 Cards, panels, frames, boxes, and image containers should not become the default architecture. They are useful for repeated objects, modular information, physical cards, contained tools, or intentionally framed artifacts.
+
+For summary data that does not need containment, use an open aligned row with subtle horizontal rules. Keep the label, value, and any secondary text action consistent across items. Reveal secondary specifications, detailed schedules, and supporting reference material through a nearby text action and an accessible disclosure or modal instead of placing all detail in the primary scan path.
 
 When a small accent mark is used as a bullet or source marker beside text, vertically center the mark with the associated type. The mark should feel optically attached to the line it labels, not pinned to the top of the row.
 
@@ -186,11 +229,9 @@ When a small accent mark is used as a bullet or source marker beside text, verti
 - Do let image, type, spacing, and contrast carry the experience.
 - Do use tight negative letter spacing for major large headlines.
 - Do keep body, metadata, captions, UI labels, and compact text at normal tracking.
-- Do keep visible type in sentence case unless a proper noun, acronym, or explicit user requirement says otherwise.
 - Do keep color roles consistent across channels.
 - Do preserve the same design personality in light, dark, print, and presentation contexts.
 - Don't default to cards, hero marquees, decorative gradients, ornamental vectors, generic icon grids, or visible grid overlays.
-- Don't use all-uppercase text, all-caps labels, or `text-transform: uppercase`.
 - Don't stretch editorial copy across the full available field.
 - Don't use orange as a broad theme.
 - Don't treat each channel as a separate brand.

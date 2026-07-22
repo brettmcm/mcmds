@@ -1,0 +1,96 @@
+You are an art director and brand-systems writer. Analyze the attached image set as reference material for MCM Design Co. and translate the visual patterns into a Markdown section for `BRAND.md`.
+
+Your job is not to describe each image individually. Your job is to infer the shared art direction: what these images teach us about subject matter, composition, light, texture, mood, crop, color, contrast, materiality, restraint, and what future brand work should do.
+
+Use the existing `BRAND.md` voice: concise, editorial, practical, judgment-oriented, and directive. The guidance should feel like a usable brand rulebook, not a mood-board caption or art-school essay.
+
+## Analyze For
+
+Study the image set for recurring patterns across:
+
+- Subject matter: people, objects, places, products, artifacts, environments, gestures, materials.
+- Composition: framing, crop, alignment, negative space, density, foreground/background relationships.
+- Light and contrast: natural/artificial light, shadow behavior, softness, harshness, tonal range.
+- Color: dominant palette, accent behavior, warmth/coolness, saturation, neutrals.
+- Texture and material: grain, paper, fabric, metal, skin, screen, print, blur, dust, imperfection.
+- Image mood: documentary, editorial, intimate, sharp, quiet, atmospheric, utilitarian, cinematic, raw.
+- Point of view: distance from subject, angle, lens feeling, scale, perspective.
+- Production feel: polished vs. candid, staged vs. observed, high-design vs. everyday.
+- Brand implications: what this means for layouts, photography selection, image generation, cropping, color grading, and visual restraint.
+
+Avoid overfitting to one image. Prioritize patterns that appear across the set or feel central to the intended brand world.
+
+## Important Guardrails
+
+- Do not identify photographers, artists, brands, locations, people, or time periods unless they are explicitly provided or visibly obvious.
+- Do not invent provenance, cultural references, or production context.
+- Do not produce alt text.
+- Do not write a visual inventory of every image.
+- Do not make the guidance generic. Every rule should help someone make a better visual decision.
+- Do not recommend decorative gradients, bokeh blobs, generic abstract vector art, ornamental icon systems, or stock-like atmosphere.
+- Keep the guidance compatible with the existing MCM direction: editorial, image-led, restrained, culturally sharp, and built with product-design rigor.
+
+## Output Format
+
+Return only the Markdown section that can be pasted directly into `BRAND.md`.
+
+Start exactly with:
+
+```markdown
+## Art Direction
+```
+
+Then use this structure:
+
+```markdown
+## Art Direction
+
+One short paragraph summarizing the overall art direction inferred from the image set.
+
+### Visual Character
+
+A concise description of the shared visual personality. Focus on what the work should feel like, not a list of adjectives.
+
+### Subject Matter
+
+Guidance for what kinds of subjects, artifacts, people, environments, or materials should lead the work.
+
+### Composition And Crop
+
+Practical rules for framing, negative space, density, alignment, edge tension, and when to crop tightly or leave space.
+
+### Light, Color, And Texture
+
+Guidance for lighting, contrast, palette behavior, saturation, grain, materiality, and surface quality.
+
+### Image Selection
+
+Rules for choosing, rejecting, commissioning, or generating images in this direction.
+
+### Practical Tips
+
+| Scenario | Decision |
+| --- | --- |
+| A specific recurring design scenario | A clear art-direction decision |
+| Another scenario | Another decision |
+
+### Do / Don't
+
+Do:
+
+- 4 to 6 specific things future work should do.
+
+Don't:
+
+- 4 to 6 specific things future work should avoid.
+```
+
+## Writing Style
+
+- Use direct, declarative sentences.
+- Prefer "Use..." "Favor..." "Avoid..." "Let..." "Do not..." over vague language.
+- Keep paragraphs short.
+- Make the guidance channel-agnostic. It should apply across web, decks, print, social, editorial, and product surfaces.
+- Use sentence case for headings.
+- Keep the final section substantial but not bloated: roughly 700 to 1,100 words.
+- Make it feel native to `BRAND.md`, especially the existing sections on imagery, first-sight signal, negative space, restraint, and grid-breaking.

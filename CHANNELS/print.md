@@ -28,7 +28,7 @@ Start from the universal MCM palette, then translate for the production process.
 For print:
 
 - Convert to CMYK or spot colors only when the output process requires it.
-- Proof the warm paper and near-black values carefully; small color shifts can change the tone.
+- Use white as the default light paper field; proof the selected stock and near-black values carefully because stock color and ink shifts can change the tone.
 - Keep orange as an accent or signal, not a full-field theme.
 - Use paper stock and ink coverage as part of the color system.
 
@@ -61,7 +61,7 @@ Avoid:
 - Unnecessary icon sets.
 - Text too close to trim or fold.
 
-## Agreements, SOWs, and Contract PDFs
+## Agreements, SOWs, and contract PDFs
 
 For agreements, statements of work, partner contracts, proposals, and other reference-driven PDFs, bias toward a tight editorial document system rather than a decorative brand piece. The job is to make terms easy to scan, compare, sign, and reuse.
 
@@ -110,5 +110,5 @@ Before finishing, check:
 - Trim, bleed, and safe area are accounted for.
 - Type is legible at final physical size.
 - Image resolution is appropriate for output.
-- Rich dark fields, warm paper tones, and orange accents will reproduce as intended.
+- Rich dark fields, white paper fields, and orange accents will reproduce as intended.
 - The first read is clear when viewed at the intended distance.

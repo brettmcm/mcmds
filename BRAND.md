@@ -8,7 +8,7 @@ Channel-specific production details belong in `CHANNELS/*.md`.
 
 MCM Design Co. should feel editorial, image-led, restrained, culturally sharp, and built with product-design rigor. The work should have enough taste to avoid template thinking and enough discipline to remain useful.
 
-The system is not generic SaaS, not startup default, not decorative portfolio maximalism, not a luxury-beige mood board, and not a cold technical dashboard. It should feel considered, direct, and alive through image, type, contrast, alignment, and negative space.
+The system is not generic SaaS, not startup default, not decorative portfolio maximalism, and not a luxury-beige mood board. MCMDS-specific work may lean into dark technical atmosphere, operational surfaces, dashboards, and material detail, but it should still feel considered, tactile, useful, and alive through image, type, contrast, alignment, and negative space.
 
 ## Creative Principles
 
@@ -18,7 +18,35 @@ The system is not generic SaaS, not startup default, not decorative portfolio ma
 4. Keep editorial mood and practical clarity together. A piece can feel sharp without hiding the information someone came for.
 5. Preserve one personality across channels. A slide, print piece, web page, report, or social graphic should feel like the same system translated into a different medium.
 
-## Dusty Times Identity Layer
+## Product design judgment
+
+Product surfaces should establish one dominant working area and demote surrounding context. Navigation, supporting panes, linked material, utilities, and status information should remain available without competing with the current task.
+
+Navigation is conditional, not ceremonial. Do not add a left rail, menu, or application shell to a short linear task simply because a reference image includes one. Likewise, do not reproduce screenshot framing, window chrome, outer fields, or rounded application canvases unless the product itself requires them.
+
+Use pane proportion and controlled asymmetry to communicate priority. A narrow navigation rail, a generous editor or task area, and a quieter context or utility region can create hierarchy without oversized cards or ornamental chrome. Persistent controls belong at stable edges or corners where repeated use makes their location predictable.
+
+Treat imagery as an active product surface or evidence aperture. It may reveal the subject, orient the user, preview material, or create a bounded first-sight signal; it should not become a decorative backdrop behind controls that need precision.
+
+For focused reviews, quotes, schedules, and other operational pages, prefer one full-width reading plane inside a bounded workspace. Avoid a repeated title rail/content-column split when it makes scanning busier. Group related line items and use whitespace to mark major changes in task or calculation; do not manufacture separation with cards, thick rules, or redundant subtotals.
+
+Separate atmosphere from usability. Expressive image treatments, oversized display type, mono readouts, measurement marks, and dark technical effects should live in bounded regions. Navigation, controls, forms, and reading surfaces should remain legible, stable, and direct.
+
+## MCMDS signal/evidence layer
+
+For MCMDS-specific work, apply the creative direction in `CREATIVE-DIRECTION.md` as a visual overlay under the universal system. The territory is controlled signal in a dark field: document-grid structure, quiet metadata, technical material detail, nocturnal atmosphere, specific imagery, and scarce operational color.
+
+Use this layer to make work feel more precise, artifact-led, technical, and tactile. Do not use it to override the role-based typography and casing rules, spacing, radius, accessibility, or containment.
+
+Good MCMDS moves:
+
+- Show evidence: product state, material detail, document artifact, exposed construction, dashboard state, source note, timestamp, coordinate, or decision.
+- Use dark operational atmosphere when it supports the subject.
+- Let one signal color carry status, heat, route, energy, focus, or interruption.
+- Use thin rules, grids, apertures, cropped artifacts, and compact metadata for structure.
+- Keep panels, boxes, and modules for repeated objects, dashboards, tools, tables, or framed artifacts rather than page-level decoration.
+
+## Dusty Times identity layer
 
 Dusty Times work uses this same MCM system with Dusty Times as the subject and identity layer. It should feel editorial, image-led, restrained, culturally sharp, and built with the same product-design rigor, while letting Dusty Times content, off-road culture, print artifacts, and partner material become the subject signal.
 
@@ -33,7 +61,7 @@ Available Dusty Times assets:
 
 Use the primary logo for horizontal placements: document headers, nav bars, website headers, deck footers, report covers, sponsor strips, and layouts where the mark sits beside other horizontal content. Use the stacked logo for compact, centered, square, or vertical placements.
 
-Use black logos on light, warm, pale, or white backgrounds. Use white logos on dark, photographic, black, or high-contrast colored backgrounds. If the background is busy, place the logo on a quiet field or adjust the crop; do not add glows, shadows, strokes, or boxes only to rescue contrast. Keep clear space around the logo and preserve its original aspect ratio.
+Use black logos on light, pale, cool-neutral, or white backgrounds. Use white logos on dark, photographic, black, or high-contrast colored backgrounds. If the background is busy, place the logo on a quiet field or adjust the crop; do not add glows, shadows, strokes, or boxes only to rescue contrast. Keep clear space around the logo and preserve its original aspect ratio.
 
 ## Brand Taste Practical Tips
 
@@ -56,7 +84,7 @@ Use a small set of distinct levels: understated label, measured body copy, large
 
 Major large headlines may use tight negative letter spacing. This helps large Indivisible headlines feel dense, confident, and editorial. Do not apply this behavior to body copy, metadata, button labels, table text, captions, footers, or compact production text.
 
-Keep visible text in sentence case unless the user explicitly defines another case for a specific artifact. Proper nouns, acronyms, and brand names may keep their correct casing, but do not use all-uppercase styling, all-caps labels, or CSS such as `text-transform: uppercase`.
+Sentence case remains the default. Uppercase may appear in terse technical readouts, coordinates, codes, or artifact-derived labels when it improves operational interpretation. It should not be used to make ordinary navigation, buttons, headings, or metadata feel more important.
 
 ### Type Hierarchy Decision Flowchart
 
@@ -80,7 +108,6 @@ Is this the main idea, cover statement, or major section turn?
 | Every section feels equally loud | Demote repeated headings and let only major turns use display scale |
 | Body copy feels hard to read | Reduce measure before changing the typeface |
 | Metadata feels noisy | Use tertiary color, smaller size, and normal tracking |
-| A label feels too quiet | Improve size, weight, color, spacing, or placement instead of making it all caps |
 | A heading wraps awkwardly | Adjust measure or line breaks before shrinking it dramatically |
 
 ## Negative Space
@@ -105,9 +132,9 @@ Are two elements part of the same thought, task, or reading unit?
 
 ## Alignment
 
-Every output needs a clear alignment system. The default MCM alignment system is an 8-column grid with a `1440px` maximum width and `48px` inner left and right padding. Channel-specific grids can adapt production details, but they should preserve this page-grid logic unless the medium makes it impossible.
+Every output needs a clear alignment system. The exact grid changes by channel, but the edges should feel deliberate. Internal columns belong to their local section, spread, slide, frame, or component only.
 
-Avoid mixing unrelated column systems in the same view or page. Internal columns belong to their local section, spread, slide, frame, or component only, and should resolve back to the shared 8-column field. A row of objects should start and end on the same field as the text that introduces it unless there is a clear reason to break alignment.
+Avoid mixing unrelated column systems in the same view or page. A row of objects should start and end on the same field as the text that introduces it unless there is a clear reason to break alignment.
 
 ### Alignment Decision Flowchart
 
@@ -122,7 +149,7 @@ Does this element share the same role as nearby elements?
 
 ## When to Break the Grid
 
-Break the grid only when it increases meaning, pace, or emphasis. Asymmetry should feel intentional and anchored to the 8-column system. Do not break the grid to make a thin idea look designed, and do not use a grid break to introduce an unrelated page width.
+Break the grid only when it increases meaning, pace, or emphasis. Asymmetry should feel intentional and anchored. Do not break the grid to make a thin idea look designed.
 
 Good reasons to break the grid:
 
