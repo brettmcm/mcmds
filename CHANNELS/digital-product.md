@@ -6,9 +6,33 @@ Read `DESIGN.md` and `BRAND.md` first. For MCMDS-specific, technical, artifact-l
 
 ## Product Thesis
 
-MCM digital products should feel compact, calm, and exact. Use clear hierarchy, deliberate pane proportions, muted supporting information, stable utilities, and just enough tonal containment to make the current task obvious.
+MCM digital products should feel compact, calm, and exact. Use relational hierarchy: deliberate pane proportions, adjacent tonal surfaces, restrained text contrast, compact grouping, stable utilities, and just enough containment to make the current task obvious.
 
 Do not confuse product rigor with generic SaaS chrome. Avoid default card grids, oversized dashboard widgets, excessive iconography, broad accent color, and ornamental navigation. The interface should reveal the work, evidence, content, or decision rather than advertising its component system.
+
+## Surface-first hierarchy
+
+Establish product hierarchy in this order:
+
+1. Surface relationship and placement.
+2. Text contrast.
+3. Font weight.
+4. Spacing.
+5. Font size.
+
+Treat size as the last lever, not the default expression of semantic nesting. Most product text should remain within a compact `12px` to `16px` band, and many interfaces need only two or three recurring sizes plus a restrained workspace title.
+
+Use a quiet tonal ladder to communicate nesting and task priority:
+
+- Canvas: the application field.
+- Subtle surface: a quiet region, lane, input area, or supporting pane.
+- Object surface: a repeated item, contained tool, or active working object.
+- Raised surface: an overlay, menu, dialog, or genuinely elevated utility.
+- Active surface: the current location or selected object, using a clear tonal step or atomic inversion.
+
+Adjacent surfaces should remain distinguishable without looking striped or boxed. Small gutters—often `3px`, `4px`, or `8px`—can reveal the canvas between regions and communicate structure without divider lines.
+
+Borders and dividers are exceptions. Add one only when surface, spacing, alignment, and contrast cannot communicate the boundary, or when repeated row alignment genuinely requires it. Tables, timelines, calculation transitions, sticky headers, drag targets, and explicit comparisons are valid uses. Do not add rules merely to make a quiet composition feel structured.
 
 ## Reusable Stylesheet
 
@@ -25,15 +49,49 @@ When generating standalone HTML inside the skill folder, include:
 
 The Adobe Fonts kit loads Indivisible. The reusable stylesheet bundles Departure Mono for financial and technical data; host projects are responsible for loading Inter when exact interface rendering is required. Add only page-specific CSS for content-driven layout exceptions, imagery, or components not covered by the base stylesheet.
 
+## Web System Showcase
+
+Use `../showcase/index.html` as the reviewable reference for the reusable web system. It imports `assets/mcmds.css` directly and presents matched light and dark specimens for foundations, typography, layout, controls, key data, tables, pricing, dialogs, specifications, timelines, and system states.
+
+The showcase is documentation and verification, not a second component implementation. Keep reusable tokens, type roles, component rules, variants, states, and responsive behavior in `assets/mcmds.css`. Keep only showcase navigation, specimen framing, review controls, and documentation layout in `showcase/showcase.css`.
+
+### Naming contract
+
+Use the `mcm-` namespace for all public CSS APIs:
+
+- Component: `.mcm-button`, `.mcm-field`, `.mcm-table`
+- Element: `.mcm-field__label`, `.mcm-dialog__header`, `.mcm-key-data__value`
+- Modifier: `.mcm-button--primary`, `.mcm-table__row--compact`, `.mcm-notice--error`
+- Semantic token: `--mcm-color-canvas`, `--mcm-color-ink`, `--mcm-space-5`, `--mcm-radius-standard`
+- Type role: `.mcm-type-display`, `.mcm-type-title`, `.mcm-type-heading`, `.mcm-type-lead`, `.mcm-type-body`, `.mcm-type-label`, `.mcm-type-label-heavy`, `.mcm-type-meta`, `.mcm-type-data`, `.mcm-type-data-large`
+
+Prefer names that describe role or behavior rather than appearance or a single page. For example, use `.mcm-key-data` instead of `.summary-row` and `.mcm-dialog` instead of `.schedule-dialog`. Quote-, campaign-, or project-specific composition classes remain local to that artifact.
+
+Existing short-form variables such as `--mcm-bg`, `--mcm-ink`, and `--mcm-line` remain compatibility aliases. New reusable work should use the canonical semantic tokens. Use `data-mcm-theme="light"` or `data-mcm-theme="dark"` on a bounded root when an explicit appearance is required; otherwise allow `prefers-color-scheme` to select the default.
+
+### Component inventory
+
+The initial reusable web layer includes:
+
+- Layout: section, shell, focused operational shell, stack, cluster, split, surfaces, and optional rules.
+- Typography: display, title, heading, lead, body, label, metadata, and technical data roles.
+- Actions: primary, secondary, quiet, accent, destructive, icon, small, and disabled buttons.
+- Forms: fields, labels, hints, errors, text inputs, number inputs, selects, text areas, checkboxes, and radios.
+- Data: side-by-side key-data items with vertically stacked internals and an optional group-level stacked variant, statuses, pills, tables with standard, compact, and selected row variants, text, number, and currency cells, pricing groups, subtotals, and grand totals.
+- Secondary detail: native dialogs, specification lists, and timelines.
+- Feedback: notices plus loading, empty, and error state compositions.
+
+Add a modifier only when the variant changes a reusable role, state, size, or behavior. Do not add modifiers for one-off spacing adjustments or content-specific styling.
+
 ## Digital Color and Depth
 
-Generated pages must define both light and dark palettes and use `prefers-color-scheme` unless the host app already provides a theme system. Prefer semantic variables such as `--bg`, `--surface`, `--ink`, `--muted`, `--tertiary`, `--line`, `--interaction`, and `--accent`. Keep interaction separate from the orange brand signal.
+Generated pages must define both light and dark palettes and use `prefers-color-scheme` unless the host app already provides a theme system. Prefer semantic variables such as `--bg`, `--surface-subtle`, `--surface`, `--surface-raised`, `--ink`, `--muted`, `--tertiary`, `--line`, `--interaction`, and `--accent`. Keep interaction separate from the orange brand signal.
 
 Use color and depth by role:
 
 - Keep the primary canvas quiet and high contrast.
-- Use surface shifts of roughly 3-8% to group controls, repeated objects, or a focused module.
-- Use hairline rules and alignment before adding shadows.
+- Use surface shifts of roughly 3-8% to group controls, repeated objects, panes, or a focused module.
+- Use adjacent surfaces, small gutters, and alignment before adding rules or shadows.
 - Reserve raised surfaces for overlays, floating utilities, menus, or objects that genuinely sit above the working plane.
 - Default interaction and focus to pure black in light mode and pure white in dark mode. Let ordinary content use the duller ink role so these states remain unmistakable.
 - Reserve orange or another signal color for brand emphasis, data semantics, progress, alerts, or a deliberately branded action. Do not color every interactive element.
@@ -51,7 +109,7 @@ Use the role-based type system from `DESIGN.md`:
 
 For standalone pages, include the Indivisible Adobe Fonts kit shown above. Leave Inter loading to the host project; `mcmds.css` loads the bundled Departure Mono file.
 
-Editorial reference values:
+Editorial reference values apply to brand pages, case studies, campaigns, and genuine section turns—not routine product structure:
 
 - `h1`: `3.25rem`, `1.1` line height, `-0.04em` tracking, weight `500`
 - `h2`: `2.25rem`, `1.1` line height, `-0.04em` tracking, weight `500`
@@ -59,14 +117,16 @@ Editorial reference values:
 - Lead paragraph: `34px`, `1.45` line height, `-0.02em` tracking
 - Editorial body: `20px`, `1.55` line height, normal tracking
 
-Product reference values:
+Product reference bands:
 
-- Product body and navigation: `13px` to `14px`, `1.35` to `1.5` line height, weight `400-500`
-- Compact controls and labels: `12px` to `13px`, `1.2` to `1.4` line height, weight `500-600`
-- Workspace headings: `20px` to `24px`, `1.25` to `1.4` line height, weight `500-600`
-- Technical metadata: `10px` to `12px`, `1.2` to `1.4` line height, weight `400`
+- Technical metadata and identifiers: `11px` to `12px`, `1.25` to `1.4` line height, weight `400-500`
+- Secondary UI, labels, and controls: `12px` to `13px`, `1.3` to `1.45` line height, weight `400-500`
+- Primary UI, content, navigation, and object titles: `14px` to `16px`, `1.35` to `1.5` line height, weight `400-600`
+- Workspace or page identity: `18px` to `24px`, `1.2` to `1.4` line height, weight `400-600`
 
-Create hierarchy through contrast and weight before increasing size. Primary text should carry the current task or decision, secondary text should explain or qualify it, and tertiary text should carry low-priority metadata. Do not make important information so muted that it becomes inaccessible.
+These are bands, not four mandatory levels. Prefer two or three recurring sizes in a single view. Use the same size with different contrast or weight for nearby semantic levels when the relationship remains clear.
+
+Primary text should carry the current task or decision, secondary text should explain or qualify it, and tertiary text should carry low-priority metadata. Do not make important information so muted that it becomes inaccessible. Avoid bold weight as a routine substitute for hierarchy; regular and medium weights should carry most product interfaces.
 
 Sentence case remains the default. Uppercase is allowed only for terse technical readouts, coordinates, codes, and artifact-derived labels when casing carries operational meaning. Do not use uppercase for ordinary navigation, buttons, headings, or metadata.
 
@@ -86,7 +146,7 @@ Common regions:
 
 Use pane proportions to communicate priority. A product may be asymmetric without feeling unbalanced when each region has a clear role and shares deliberate edges. Avoid multiple equally loud columns.
 
-Keep persistent navigation and the primary working pane on the same canvas by default. Introduce a different pane background only when the region has a meaningfully different task or elevation; use local surface fills for active navigation and metric tiles instead of splitting the whole window tonally.
+Keep persistent navigation and the primary working pane related through a controlled surface ladder. A quiet pane-level tonal shift is appropriate when it clarifies task, nesting, or priority; avoid arbitrary checkerboarding. Use local object surfaces for repeated content and active controls, and reserve raised surfaces for genuine elevation.
 
 Use stable outer gutters once and reuse them across comparable views. Within dense product workspaces, compact local padding such as `16px`, `20px`, `24px`, or `32px` is appropriate. Prefer flexbox for one-dimensional pane relationships and CSS grid for explicit two-dimensional tracks.
 
@@ -97,8 +157,8 @@ Use this pattern for quotes, pricing reviews, schedules, production summaries, a
 - Center one primary content column. Use `980px` as the preferred maximum width, with the same width and gutters for the header, main content, and footer or source note.
 - Default to a single reading plane. Add navigation or secondary columns only when the information architecture requires them.
 - Keep the canvas neutral. Remove accent color from rules, labels, links, and focus decoration unless color communicates a real semantic state or deliberate brand signal.
-- Limit the visible type scale to roughly five roles and rely on weight, contrast, and spacing for hierarchy. Set summary values at medium weight rather than bold.
-- Present key data as an open aligned row with shared hairline rules, not a set of boxes. Put secondary actions such as “View schedule” or “Print specs” directly below the relevant value as quiet text buttons.
+- Keep most text within the compact product bands and rely on surface, contrast, and weight before changing size. A focused workspace should usually use two or three recurring sizes plus its title. Set summary values at regular or medium weight rather than bold.
+- Present key data as an open group, not a set of boxes. Individual items may sit side by side, but each item's label, value, and secondary action must remain vertically stacked. Use `.mcm-key-data--stacked` when the group itself should flow vertically.
 - Collapse detailed schedules to the single date needed for the primary decision, then expose the full schedule through an accessible modal or disclosure.
 - Format concise operational dates using the reader's locale; in American contexts prefer `Month DD` when the year is already established elsewhere.
 
@@ -131,12 +191,12 @@ Use for documents, research, notes, standards, asset libraries, or linked knowle
 - Use hierarchical navigation with a dominant editor or reading pane.
 - Keep linked notes, metadata, or utilities in a quieter secondary region.
 - Use Inter for dense navigation and long-form workspace reading.
-- Prefer open document structure, thin rules, and alignment over card containment.
+- Prefer shared tonal fields, compact gutters, open document structure, and alignment over card containment or repeated rules.
 - Preserve stable locations for account, creation, and window-level utilities.
 
 ## Components and Containment
 
-Prefer low-friction components: text links, hairline rules, concise metadata, restrained tables, quiet buttons, subtle fields, and functional icons.
+Prefer low-friction components: text links, concise metadata, restrained tables, quiet buttons, subtle fields, functional icons, and tonal surfaces that clarify relationships without drawing every boundary.
 
 - Use cards or panels for repeated objects, contained tools, modular information, or framed evidence—not as page-level architecture.
 - Use small radii consistently: `4px` for technical objects, `6px` for controls and panels, and around `8px` for imagery.
@@ -144,11 +204,11 @@ Prefer low-friction components: text links, hairline rules, concise metadata, re
 - Use icons only when functional or brand-owned. Pair unfamiliar icons with text or an accessible label.
 - Keep icon buttons visually quiet at rest and clearly interactive on hover and focus.
 - Use restrained fields with a subtle but visible surface tint. Do not rely on bottom-border-only inputs.
-- Keep tables structural. If a table cannot remain readable on mobile, transform each row into a labeled stack instead of forcing horizontal scrolling where possible.
+- Keep tables structural. Subtle row rules remain appropriate when they materially improve horizontal tracking. If a table cannot remain readable on mobile, transform each row into a labeled stack instead of forcing horizontal scrolling where possible.
 - Keep table and list canvases continuous with the window or working pane unless grouping materially improves comprehension. Column-header rows do not need enclosing top or bottom dividers when alignment already supplies structure.
-- Use compact full-width rows and super-subtle dividers between line items. Omit column headers when the section title and alignment make every value self-evident; retain them when interactive or unfamiliar columns need explanation.
+- Use compact full-width rows. Add super-subtle dividers only when row tracking would otherwise become ambiguous. Omit column headers when the section title and alignment make every value self-evident; retain them when interactive or unfamiliar columns need explanation.
 - Group related line items together. Use text section titles inside a continuous pricing review instead of separate card surfaces or unnecessary intermediate subtotals.
-- Stack subtotals and grand totals as full-width rule-separated line items. Use a thin rule for the grand-total transition, never a heavy black divider. Separate a materially different calculation group with generous whitespace—typically `72px` to `96px`—rather than thick chrome.
+- Stack subtotals and grand totals as full-width line items. A thin rule is appropriate for the grand-total transition when alignment and weight are insufficient; never use a heavy black divider. Separate a materially different calculation group with a surface change or a meaningful gap—often `32px` to `48px` in compact product work—rather than thick chrome.
 - Align values inside repeated controls to the same leading inset. Reserve a stable trailing region for disclosure indicators, steppers, or menu glyphs so label length never shifts the starting edge.
 - Keep numeric table inputs compact and vertically aligned with surrounding values. When the column header supplies the visible label, keep an accessible name with `aria-label` and hide redundant field labels. Hide native number steppers when direct entry is the intended interaction.
 
@@ -156,7 +216,7 @@ Prefer low-friction components: text links, hairline rules, concise metadata, re
 
 Use native `<dialog>` where practical for schedules, specifications, and other secondary reference material.
 
-- Keep the dialog title bar sticky with an opaque background and a bottom hairline so scrolling content never shows through it.
+- Keep the dialog title bar sticky with an opaque surface. Add a bottom hairline only when scrolling content would otherwise blur the boundary.
 - Let the dialog body scroll independently and keep repeated reference rows compact; `8px` vertical row padding is a useful starting point.
 - Use a quiet text or icon close control with an accessible name, restore focus to the trigger, support Escape, and provide a clear backdrop.
 - Keep secondary information out of the primary page flow when it would compete with the main review task.
@@ -166,7 +226,7 @@ Use native `<dialog>` where practical for schedules, specifications, and other s
 Every interactive component must define a complete and consistent state model.
 
 - Rest: quiet and legible; do not make every control look active.
-- Hover: use a small surface, border, or text-color shift. Avoid movement that destabilizes dense layouts.
+- Hover: use a small surface or text-color shift. Add a border only when the component shape would otherwise be unclear. Avoid movement that destabilizes dense layouts.
 - Focus: show a persistent, high-contrast focus indicator that is not dependent on color alone.
 - Selected navigation: use a compact rounded surface and interaction-colored content; keep the surrounding pane quiet.
 - Selected table or list row: invert the canvas and all row content as one atomic state—black with white content in light mode, white with black content in dark mode. Embedded fields, menus, icons, placeholders, dividers, and secondary labels must inherit the selected context immediately, without delayed per-cell updates.
@@ -231,6 +291,8 @@ After the reset, add spacing intentionally through component or section classes 
 Before finishing frontend work, check:
 
 - One working area is visually dominant and supporting panes are appropriately quieter.
+- Surface relationships communicate hierarchy before divider lines or large type changes.
+- Most interface text remains in a tight range, with size reserved for the workspace identity or a genuine primary signal.
 - The role-based fonts match the content: display, product UI, or technical metadata.
 - Sentence case is preserved except for the narrow technical uppercase exception.
 - Primary, secondary, and tertiary text remain distinguishable and accessible.

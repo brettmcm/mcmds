@@ -4,6 +4,7 @@ name: MCM Design Co.
 description: A channel-agnostic design system for MCM Design Co. visual work across digital product, web, print, presentation, social, editorial, and graphic design applications.
 colors:
   dark-canvas: "#000000"
+  dark-surface-subtle: "#050607"
   dark-surface: "#0b0d10"
   dark-surface-raised: "#14171c"
   dark-ink: "#d1d5db"
@@ -14,6 +15,7 @@ colors:
   dark-success: "#32d46d"
   dark-alert: "#ff4d2e"
   light-canvas: "#ffffff"
+  light-surface-subtle: "#f7f8fa"
   light-surface: "#f2f4f7"
   light-surface-raised: "#ffffff"
   light-ink: "#30343b"
@@ -94,6 +96,7 @@ The palette is built from pure black and white endpoints, quiet cool secondary g
 Dark roles:
 
 - Canvas: `#000000`
+- Subtle surface: `#050607`
 - Surface: `#0b0d10`
 - Raised surface: `#14171c`
 - Ink: `#d1d5db`
@@ -107,6 +110,7 @@ Dark roles:
 Light roles:
 
 - Canvas: `#ffffff`
+- Subtle surface: `#f7f8fa`
 - Surface: `#f2f4f7`
 - Raised surface: `#ffffff`
 - Ink: `#30343b`
@@ -129,7 +133,7 @@ MCMDS-specific work may use a small secondary signal palette when the subject be
 
 These secondary accents are subordinate to the universal palette. Use one accent family at a time unless designing a genuine data/status system. Keep signal color scarce, functional, and below roughly 5-12% of the composition in most work.
 
-Light and dark expressions should feel like the same system under different ambient light. Use true white and true black for canvas and interaction endpoints; use slightly subdued cool-neutral ink for ordinary content. When an intermediate neutral needs a slight tint, keep it cool and blue-gray rather than beige, cream, brown, olive, or otherwise warm. Dark work may lean more technical for MCMDS-specific work, but it should still reveal subject matter, material, state, proof, or decision rather than becoming a generic sci-fi dashboard.
+Light and dark expressions should feel like the same system under different ambient light. Use true white and true black for canvas and interaction endpoints; use slightly subdued cool-neutral ink for ordinary content. The subtle surface sits between canvas and the standard object surface so panes and grouped regions can be expressed without borders. When an intermediate neutral needs a slight tint, keep it cool and blue-gray rather than beige, cream, brown, olive, or otherwise warm. Dark work may lean more technical for MCMDS-specific work, but it should still reveal subject matter, material, state, proof, or decision rather than becoming a generic sci-fi dashboard.
 
 ## Typography
 
@@ -169,7 +173,9 @@ Core hierarchy:
 
 Major large headlines may use negative letter spacing. Body copy, metadata, UI labels, tables, buttons, captions, annotations, and compact production text should use normal letter spacing.
 
-On compact operational surfaces, limit the visible type scale to roughly five functional roles: page title, section title, body, label, and technical data. Create additional hierarchy through weight, contrast, and spacing before introducing another size. Key data values should usually use medium weight rather than bold weight.
+On compact product and operational surfaces, keep most text inside a narrow `12px` to `16px` band. Use four practical bands by default: technical metadata at `11px` to `12px`, secondary UI at `12px` to `13px`, primary UI and content at `14px` to `16px`, and a workspace or page identity at `18px` to `24px`. These bands are ranges, not a requirement to use four different sizes in every view.
+
+Establish product hierarchy through surface relationships and text contrast first, weight second, spacing third, and size last. Most interfaces should use only two or three recurring text sizes plus a restrained workspace title. Keep summary values at regular or medium weight unless stronger emphasis communicates a real state or decision. Large editorial display roles remain available for brand pages, campaigns, case studies, and genuine section turns; they are not the product default.
 
 Use sentence case for visible text unless a channel or brand artifact has a deliberate reason to use another case. Uppercase is allowed for terse technical readouts, coordinates, codes, and artifact-derived labels when casing carries operational meaning. Do not use uppercase as a general style for navigation, buttons, headings, or ordinary metadata. Do not add periods to titles, labels, or compact metadata unless they are complete sentences.
 
@@ -189,13 +195,13 @@ Universal spacing rhythm:
 - Wide editorial gaps: `144px`
 - Comfortable text measure: `55-70ch`
 
-Use generous negative space for pace and emphasis, but keep related information visibly grouped. If a composition feels too dense, remove low-value content before adding decorative space.
+Use generous negative space for editorial pace and emphasis, but keep related information visibly grouped. Product surfaces should usually rely on compact local gaps—commonly `4px`, `8px`, `12px`, `16px`, and `24px`—and reserve `48px` or more for meaningful changes in task or region. If a composition feels too dense, remove low-value content before adding decorative space.
 
 ## Elevation & Depth
 
-Depth is achieved through tonal surfaces, spacing, contrast, material, paper, imagery, and thin rules rather than heavy shadows or decorative effects. In physical media, paper stock, ink density, and image texture can carry depth. In digital media, tonal surfaces and borders should do most of the work.
+Depth is achieved through tonal surfaces, spacing, contrast, material, paper, imagery, and occasional rules rather than heavy shadows or decorative effects. In physical media, paper stock, ink density, and image texture can carry depth. In digital product work, adjacent tonal surfaces should do most of the structural work.
 
-Prefer horizontal structure and whitespace over vertical dividers. Use vertical rules only when they clarify a specific comparison, timeline, table, or production structure.
+Treat borders and dividers as exceptions, not default architecture. Add a rule only when surface relationships, spacing, alignment, and text contrast cannot communicate the boundary, or when repeated row alignment genuinely requires it. Tables, timelines, calculation transitions, sticky headers, and explicit comparison structures are valid uses. Avoid routine vertical dividers.
 
 ## Shapes
 
@@ -216,11 +222,11 @@ Do not use generic abstract vector art as a substitute for subject matter. Do no
 
 ## Components and Objects
 
-Across channels, prefer low-friction objects: text links, thin rules, concise metadata, restrained tables, quiet captions, small marks, and simple containers. Use containment only when it improves comprehension.
+Across channels, prefer low-friction objects: text links, concise metadata, restrained tables, quiet captions, small marks, subtle tonal surfaces, and simple containers. Use containment only when it improves comprehension.
 
 Cards, panels, frames, boxes, and image containers should not become the default architecture. They are useful for repeated objects, modular information, physical cards, contained tools, or intentionally framed artifacts.
 
-For summary data that does not need containment, use an open aligned row with subtle horizontal rules. Keep the label, value, and any secondary text action consistent across items. Reveal secondary specifications, detailed schedules, and supporting reference material through a nearby text action and an accessible disclosure or modal instead of placing all detail in the primary scan path.
+For summary data that does not need containment, allow individual key-data items to sit side by side in an open group. Inside every item, stack the label, value, and secondary text action in that order. Use the group-level stacked variant when available width or longer content makes a vertical sequence clearer. Reveal secondary specifications, detailed schedules, and supporting reference material through a nearby text action and an accessible disclosure or modal instead of placing all detail in the primary scan path.
 
 When a small accent mark is used as a bullet or source marker beside text, vertically center the mark with the associated type. The mark should feel optically attached to the line it labels, not pinned to the top of the row.
 

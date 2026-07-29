@@ -26,6 +26,8 @@ Navigation is conditional, not ceremonial. Do not add a left rail, menu, or appl
 
 Use pane proportion and controlled asymmetry to communicate priority. A narrow navigation rail, a generous editor or task area, and a quieter context or utility region can create hierarchy without oversized cards or ornamental chrome. Persistent controls belong at stable edges or corners where repeated use makes their location predictable.
 
+For product interfaces, prefer relational hierarchy over a visibly tiered composition. Let adjacent tonal surfaces, text contrast, compact grouping, and stable placement establish importance before changing font size or drawing a boundary. Most product text should occupy a narrow size range; a section does not need a larger heading merely because it is structurally nested.
+
 Treat imagery as an active product surface or evidence aperture. It may reveal the subject, orient the user, preview material, or create a bounded first-sight signal; it should not become a decorative backdrop behind controls that need precision.
 
 For focused reviews, quotes, schedules, and other operational pages, prefer one full-width reading plane inside a bounded workspace. Avoid a repeated title rail/content-column split when it makes scanning busier. Group related line items and use whitespace to mark major changes in task or calculation; do not manufacture separation with cards, thick rules, or redundant subtotals.
@@ -43,7 +45,7 @@ Good MCMDS moves:
 - Show evidence: product state, material detail, document artifact, exposed construction, dashboard state, source note, timestamp, coordinate, or decision.
 - Use dark operational atmosphere when it supports the subject.
 - Let one signal color carry status, heat, route, energy, focus, or interruption.
-- Use thin rules, grids, apertures, cropped artifacts, and compact metadata for structure.
+- Use tonal fields, compact gutters, grids, apertures, cropped artifacts, and compact metadata for structure. Keep rules for boundaries that cannot be communicated more quietly.
 - Keep panels, boxes, and modules for repeated objects, dashboards, tools, tables, or framed artifacts rather than page-level decoration.
 
 ## Dusty Times identity layer
@@ -70,17 +72,19 @@ Use black logos on light, pale, cool-neutral, or white backgrounds. Use white lo
 | The work feels polished but generic | Add a specific subject signal: product state, project artifact, material detail, person, place, proof point, or decision. | Let the subject lead |
 | The composition feels empty | Remove low-value content first, then tighten grouping before adding decorative space or extra containers. | Restraint |
 | A layout needs energy | Break the grid with one anchored move: image crop, quote, proof point, artifact, or number. Do not make several unrelated breaks. | Grid breaking |
-| A piece feels too designed | Replace ornament with structure: stronger type hierarchy, better alignment, a thin rule, tonal surface, or more useful image. | Structure over ornament |
+| A piece feels too designed | Replace ornament with structure: a clearer surface relationship, better alignment, tighter contrast, or a more useful image. | Structure over ornament |
 | The first read is unclear | Choose one dominant signal and demote supporting text, metadata, and secondary objects. | First-sight signal |
 | Editorial mood is hiding the job | Raise the most useful information before adding mood. The work should stay sharp without becoming cryptic. | Editorial clarity |
 | Repeated sections feel equally loud | Let only major turns use display scale; demote repeated headings, labels, and metadata. | Type hierarchy |
-| Related elements feel disconnected | Pull related items closer, then separate the next group with a rule, larger space, or a page/slide break. | Negative space |
-| Containment is becoming the default | Use open spacing, alignment, and thin rules unless the object is repeated, modular, tool-like, or physically framed. | Containment |
+| Related elements feel disconnected | Pull related items closer, then separate the next group with a tonal shift, larger space, or a page/slide break. | Negative space |
+| Containment is becoming the default | Use a shared surface, compact gutter, alignment, or open spacing unless the object is repeated, modular, tool-like, or physically framed. | Containment |
 | A channel translation feels like a different brand | Carry over the same color roles, type restraint, image logic, and spacing rhythm before adapting production details. | Channel consistency |
 
 ## Type Hierarchy
 
 Use a small set of distinct levels: understated label, measured body copy, large section or cover heading, quiet list text, and compact metadata. A hierarchy is successful when the reader knows where to start without every heading becoming oversized.
+
+In product interfaces, compress those levels. Keep most text within a narrow `12px` to `16px` range and allow color, weight, surface, and position to carry distinctions that editorial work may express through scale. Reserve larger type for the workspace identity or a genuine primary signal, not every semantic heading level.
 
 Major large headlines may use tight negative letter spacing. This helps large Indivisible headlines feel dense, confident, and editorial. Do not apply this behavior to body copy, metadata, button labels, table text, captions, footers, or compact production text.
 
@@ -123,7 +127,7 @@ Are two elements part of the same thought, task, or reading unit?
 |-- Yes -> Keep them close and separate them from the next group
 `-- No
     |-- Is the next moment a major narrative or visual turn?
-    |   `-- Yes -> Use large space, a rule, a page break, or a slide break
+    |   `-- Yes -> Use large space, a tonal field, a page break, or a slide break
     |-- Is it a continuation of the same section?
     |   `-- Yes -> Use a moderate stack gap
     `-- Is the piece feeling dense?
@@ -188,8 +192,8 @@ Does the output need an immediate brand, person, place, product, or story signal
 Is the element a repeated object, contained tool, physical card, modular block, or framed artifact?
 |-- Yes -> Containment may be appropriate
 `-- No
-    |-- Can spacing, type, and a thin rule create the structure?
-    |   `-- Yes -> Do not add a box
+    |-- Can spacing, type, contrast, or a shared tonal surface create the structure?
+    |   `-- Yes -> Do not add another box or rule
     |-- Is containment necessary for comprehension?
     |   `-- Yes -> Use a quiet surface, rule, or frame
     `-- Default -> Keep the layout open
@@ -229,7 +233,7 @@ Do:
 - Use asymmetry when it clarifies rhythm or emphasis.
 - Keep long body copy in a controlled measure.
 - Use muted text with selected primary emphasis for leading phrases or key terms.
-- Let thin rules create structure.
+- Let surfaces, contrast, alignment, and spacing create structure; use rules only when the boundary needs to be explicit.
 - Keep the result useful even when it has editorial mood.
 
 Don't:

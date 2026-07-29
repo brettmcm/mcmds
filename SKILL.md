@@ -11,6 +11,8 @@ This is the single source of truth for MCM Design Co. and Dusty Times work. When
 
 Use sentence case by default for visible text, including headings, labels, buttons, captions, slide titles, report titles, and social graphics. Terse technical readouts, coordinates, codes, and artifact-derived labels may use uppercase when casing carries operational meaning. Do not use uppercase as a general style for navigation, buttons, headings, or ordinary metadata.
 
+For digital product work, use a surface-first hierarchy. Prefer subtle tonal relationships, text contrast, compact grouping, and stable placement over large type jumps or persistent divider lines. Use font size as the last hierarchy lever, and keep most interface text within a tight range.
+
 ## Source layers
 
 - `DESIGN.md` defines the universal design system: color, typography, spacing, proportion, shape, depth, imagery, and reusable primitives.
@@ -49,6 +51,8 @@ Use sentence case by default for visible text, including headings, labels, butto
 `assets/mcmds.css` is a reusable implementation asset for the digital-product channel. When `DESIGN.md` changes measurable primitives such as color, typography, spacing, radius, or component treatment, review and update `assets/mcmds.css` so standalone HTML output stays aligned.
 
 Do not regenerate implementation assets blindly. Preserve hand-tuned CSS unless the source guidance clearly supersedes it.
+
+Use mymind as the live visual reference layer, not a mirrored Markdown archive. Do not pull from mymind automatically for every MCMDS task. Use MCMDS alone by default for applying established design rules, production cleanup, spacing, type, layout, contrast, responsiveness, and known channel guidance. Pull from mymind when the task needs fresh taste evidence, visual inspiration, concept exploration, moodboarding, calibration against saved visual preferences, or evolution of the system. When pulling mymind for MCMDS calibration or refresh work, prefer the `MCMDS` Space as the primary reference source before broader mymind searches. When a repeated pattern from mymind proves durable, promote it into `DESIGN.md`, `BRAND.md`, `CREATIVE-DIRECTION.md`, or the relevant `CHANNELS/*.md` file instead of storing a separate vault taste layer.
 
 ## Verification
 

@@ -16,7 +16,7 @@ The work should carry the confidence of a printed identity system, the specifici
 
 The core idea is controlled signal in a dark field: a rigorous neutral system where information is arranged like evidence, materials are shown through seams and construction details, and color appears only as a precise operational event.
 
-Recognition should come from small, deliberate moves: gridded paper logic, quiet metadata, thin rules, sharp image crops, hard material edges, transparent or exposed layers, and one signal color used with restraint.
+Recognition should come from small, deliberate moves: gridded paper logic, quiet metadata, tonal fields, sharp image crops, hard material edges, transparent or exposed layers, and one signal color used with restraint. Rules may appear when the artifact genuinely behaves like a document, measurement, or technical boundary; they should not become ambient decoration.
 
 ## Influence hierarchy
 
@@ -36,7 +36,7 @@ Outliers: do not over-weight literal automotive branding, sci-fi theming, nostal
 - Use the role-based type system in `DESIGN.md`: Indivisible for display and brand expression, Inter for product UI and workspace reading, and Departure Mono for genuine technical metadata.
 - Use the spacing scale in `DESIGN.md`: `4px`, `8px`, `12px`, `24px`, `48px`, `72px`, `112px`, and `144px`.
 - Use the radius system in `DESIGN.md`: `4px`, `6px`, `8px`, and full radius only for compact tags, pills, or status markers.
-- Use open spacing, alignment, thin rules, tonal shifts, and type hierarchy before adding boxes or panels.
+- Use tonal shifts, compact gutters, alignment, open spacing, and tight type hierarchy before adding boxes, panels, or rules.
 - Containment is appropriate for repeated objects, modular tools, dense operational panels, physical cards, framed artifacts, tables, or dashboards. It should not become the default page architecture.
 - Technical can be warm, tactile, and useful. Avoid generic sci-fi gloss unless the subject explicitly calls for it.
 - Dark operational work is allowed to lean technical, but it should still reveal subject matter, material, state, proof, or decision.
@@ -70,7 +70,7 @@ Usage:
 
 ## Layout and grid
 
-The layout should feel printed and engineered, but not over-boxed. Use a shared alignment system, strong margins, and compact metadata blocks. Let thin rules, spacing, and image placement do most of the architecture.
+The layout should feel printed and engineered, but not over-boxed or over-ruled. Use a shared alignment system, strong margins, compact metadata blocks, and adjacent tonal fields. Let surface, spacing, contrast, and image placement do most of the architecture.
 
 Preferred structures:
 
@@ -111,7 +111,7 @@ Avoid generic premium lifestyle photography, stock technology imagery, vague atm
 
 Use a restrained technical vocabulary:
 
-- Thin rules, hairlines, quiet dividers, and small registration marks.
+- Thin rules, hairlines, quiet dividers, and small registration marks only where they measure, align, index, or clarify a real boundary.
 - Dot grids, ruled lines, ledger fields, and micro tables.
 - Small status dots, glyphs, arrows, counters, coordinates, and timestamps.
 - Rectangular panels only where they improve comprehension, repeated structure, tool behavior, or dashboard use.
@@ -125,7 +125,7 @@ If a shape does not measure, reveal, frame, route, signal, group, or clarify, re
 
 ### Brand identity and stationery
 
-Use black, true white, graphite, and restrained neutral surfaces with one signal intervention. Build from simple documents: cards, sheets, notepads, labels, folders, and standards pages. Use small marks, thin rules, gridded interiors, and tactile paper or screen texture. Let the system feel useful and collectible, not decorative.
+Use black, true white, graphite, and restrained neutral surfaces with one signal intervention. Build from simple documents: cards, sheets, notepads, labels, folders, and standards pages. Use small marks, tonal layers, gridded interiors, and tactile paper or screen texture. Let the system feel useful and collectible, not decorative.
 
 ### Website and interface
 
