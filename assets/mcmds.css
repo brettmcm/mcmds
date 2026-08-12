@@ -124,12 +124,15 @@
   --mcm-section-space-tight: 72px;
   --mcm-copy-measure: 68ch;
   --mcm-fast: 160ms ease;
+  --mcm-product-gutter: clamp(20px, 3vw, 44px);
+  --mcm-product-row-height: 54px;
+  --mcm-product-rule: color-mix(in srgb, var(--mcm-color-ink) 11%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --mcm-color-canvas: #000000;
-    --mcm-color-surface-subtle: #050607;
+    --mcm-color-surface-subtle: #090b0e;
     --mcm-color-surface: #0b0d10;
     --mcm-color-surface-raised: #14171c;
     --mcm-color-ink: #d1d5db;
@@ -188,7 +191,7 @@
 [data-mcm-theme="dark"] {
   color-scheme: dark;
   --mcm-color-canvas: #000000;
-  --mcm-color-surface-subtle: #050607;
+  --mcm-color-surface-subtle: #090b0e;
   --mcm-color-surface: #0b0d10;
   --mcm-color-surface-raised: #14171c;
   --mcm-color-ink: #d1d5db;
@@ -424,13 +427,6 @@ h4 {
 
 .mcm-rule-strong {
   border-top: 1px solid var(--mcm-line-strong);
-}
-
-.mcm-accent-rule {
-  display: block;
-  width: 16px;
-  height: 4px;
-  background: var(--mcm-accent);
 }
 
 .mcm-kicker,

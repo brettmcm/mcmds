@@ -4,7 +4,7 @@ name: MCM Design Co.
 description: A channel-agnostic design system for MCM Design Co. visual work across digital product, web, print, presentation, social, editorial, and graphic design applications.
 colors:
   dark-canvas: "#000000"
-  dark-surface-subtle: "#050607"
+  dark-surface-subtle: "#090b0e"
   dark-surface: "#0b0d10"
   dark-surface-raised: "#14171c"
   dark-ink: "#d1d5db"
@@ -85,7 +85,9 @@ rounded:
 
 ## Overview
 
-MCM Design Co. uses a restrained editorial system that can move across channels: digital product, websites, print, presentations, reports, social graphics, editorial layouts, and branded artifacts. The system should feel refined, grounded, culturally aware, and practical. It should avoid generic SaaS defaults, decorative portfolio maximalism, and cold technical layout that does not reveal subject matter, material, state, proof, or decision.
+MCM Design Co. uses one restrained system across media. Scope is its clearest current expression: a quiet field, compact hierarchy, decisive contrast, evidence over decoration, and structure that appears only where it helps. Translate that judgment to the medium; do not make every output resemble an interface.
+
+Minimalism is the default, not a finishing pass. Start with fewer words, fewer objects, fewer sections, and fewer visible states than the brief appears to invite. Add only what comprehension or use proves necessary.
 
 This file defines the universal system. It should not carry channel-specific production mechanics. Use `CHANNELS/*.md` for medium-specific translation, such as CSS implementation, print bleed, slide layout, or social crop behavior.
 
@@ -96,7 +98,7 @@ The palette is built from pure black and white endpoints, quiet cool secondary g
 Dark roles:
 
 - Canvas: `#000000`
-- Subtle surface: `#050607`
+- Subtle surface: `#090b0e`
 - Surface: `#0b0d10`
 - Raised surface: `#14171c`
 - Ink: `#d1d5db`
@@ -123,7 +125,9 @@ Light roles:
 
 Use the appearance-dependent interaction endpoint—pure white in dark mode and pure black in light mode—for controls, focus, active navigation, and selected content when maximum state contrast is needed. Keep ordinary content on the duller ink role so interactive emphasis remains distinct.
 
-Use orange as the primary MCM brand signal, not the default interaction color and not a theme. It is best for short rules, small marks, critical emphasis, data semantics, or a focused branded call to action. It should rarely dominate a composition.
+Use orange as the primary MCM brand signal, not the default interaction color and not a theme. It is best for compact non-linear marks, critical emphasis, data semantics, or a focused branded call to action. It should rarely dominate a composition.
+
+Never render orange as a bar, rule, stripe, rail, divider, underline, edge strip, progress strip, or transition line. This prohibition applies across interfaces, websites, print, presentations, documents, social graphics, editorial work, motion, and generated imagery. Use spacing, alignment, tonal contrast, type, imagery, or a compact non-linear semantic mark instead. Functional charts and status systems may use orange data marks, but not decorative linear brand accents.
 
 MCMDS-specific work may use a small secondary signal palette when the subject benefits from technical, operational, or atmospheric color:
 
@@ -173,7 +177,7 @@ Core hierarchy:
 
 Major large headlines may use negative letter spacing. Body copy, metadata, UI labels, tables, buttons, captions, annotations, and compact production text should use normal letter spacing.
 
-On compact product and operational surfaces, keep most text inside a narrow `12px` to `16px` band. Use four practical bands by default: technical metadata at `11px` to `12px`, secondary UI at `12px` to `13px`, primary UI and content at `14px` to `16px`, and a workspace or page identity at `18px` to `24px`. These bands are ranges, not a requirement to use four different sizes in every view.
+On compact working surfaces, keep most text inside a narrow `11px` to `14px` band: `10-11px` for indices and terse metadata, `12px` for secondary information, and `13-14px` for primary content and controls. Workspace identity and major titles may sit around `20-27px`. These are practical ranges, not a requirement to use every size.
 
 Establish product hierarchy through surface relationships and text contrast first, weight second, spacing third, and size last. Most interfaces should use only two or three recurring text sizes plus a restrained workspace title. Keep summary values at regular or medium weight unless stronger emphasis communicates a real state or decision. Large editorial display roles remain available for brand pages, campaigns, case studies, and genuine section turns; they are not the product default.
 
@@ -181,9 +185,23 @@ Use sentence case for visible text unless a channel or brand artifact has a deli
 
 ## Layout
 
+### Content budget
+
+Before composing, reduce the material.
+
+- One primary idea, task, or decision per field.
+- One heading level by default.
+- One short supporting passage at most; omit it when the subject is self-evident.
+- No automatic eyebrow, index, caption, description, or metadata stack.
+- No section made only to explain another section.
+- No repeated principle stated in heading, body, and label.
+- No multi-variant showcase unless comparison is the task.
+
+These are starting limits, not quotas. Use even less when possible.
+
 Use a shared alignment system for each composition. The exact grid changes by channel, but the principle stays stable: major content should share clear edges, local columns should not create accidental competing systems, and width changes should be intentional.
 
-Headers, main content, and footers or source notes that belong to one reading surface should share the same maximum width, gutters, and leading edge. A focused operational page may use a narrower centered workspace than an editorial page; `980px` is the preferred digital reference width for that pattern.
+Elements that belong to one reading surface should share gutters and a leading edge. Interactive work defaults to a full-bleed canvas with fluid `20-44px` gutters. Use a maximum width only when reading measure or task focus needs one. Print, slides, and graphics should interpret “full-bleed field” as a compositional idea, not a CSS rule.
 
 Universal spacing rhythm:
 
@@ -199,9 +217,9 @@ Use generous negative space for editorial pace and emphasis, but keep related in
 
 ## Elevation & Depth
 
-Depth is achieved through tonal surfaces, spacing, contrast, material, paper, imagery, and occasional rules rather than heavy shadows or decorative effects. In physical media, paper stock, ink density, and image texture can carry depth. In digital product work, adjacent tonal surfaces should do most of the structural work.
+Depth is achieved through tonal surfaces, spacing, contrast, material, paper, imagery, and occasional rules rather than heavy shadows or decorative effects. Reserve shadows for real floating layers such as drawers, menus, dialogs, and lifted physical artifacts.
 
-Treat borders and dividers as exceptions, not default architecture. Add a rule only when surface relationships, spacing, alignment, and text contrast cannot communicate the boundary, or when repeated row alignment genuinely requires it. Tables, timelines, calculation transitions, sticky headers, and explicit comparison structures are valid uses. Avoid routine vertical dividers.
+Default to no borders or dividers. First try space, alignment, type contrast, surface tone, or object placement. Add a rule only when removing it creates a real scanning or comprehension failure. Do not use rules to decorate rhythm, announce every section, or make sparse work feel finished. Selection should be a surface event, not a border event.
 
 ## Shapes
 
@@ -220,11 +238,15 @@ Use real or generated raster imagery when imagery helps reveal the subject, proo
 
 Do not use generic abstract vector art as a substitute for subject matter. Do not crop important subject matter so aggressively that the piece loses meaning. For personal/about content, black-and-white or textured image treatment is appropriate.
 
-## Components and Objects
+## Objects
 
 Across channels, prefer low-friction objects: text links, concise metadata, restrained tables, quiet captions, small marks, subtle tonal surfaces, and simple containers. Use containment only when it improves comprehension.
 
-Cards, panels, frames, boxes, and image containers should not become the default architecture. They are useful for repeated objects, modular information, physical cards, contained tools, or intentionally framed artifacts.
+Cards, panels, frames, boxes, and image containers should not become the default architecture. Start with an open field, rows, groups, and whitespace. Add containment only for a bounded summary, evidence object, floating layer, physical artifact, or genuinely modular tool.
+
+Repeated records should usually be quiet rows without routine separators. Resting states stay calm; hover, focus, selection, context, and direct manipulation reveal the necessary controls. Strong selection may invert the entire object. Consecutive selections may merge visually.
+
+Detail should preserve place. In interactive work, prefer inline editing, compact popovers, or an edge-anchored inspector over routing away from the working field. In static work, use notes, captions, insets, or appendices without fragmenting the main composition.
 
 For summary data that does not need containment, allow individual key-data items to sit side by side in an open group. Inside every item, stack the label, value, and secondary text action in that order. Use the group-level stacked variant when available width or longer content makes a vertical sequence clearer. Reveal secondary specifications, detailed schedules, and supporting reference material through a nearby text action and an accessible disclosure or modal instead of placing all detail in the primary scan path.
 
@@ -237,7 +259,9 @@ When a small accent mark is used as a bullet or source marker beside text, verti
 - Do keep body, metadata, captions, UI labels, and compact text at normal tracking.
 - Do keep color roles consistent across channels.
 - Do preserve the same design personality in light, dark, print, and presentation contexts.
+- Do remove at least one layer of text, structure, or explanation from the obvious first draft.
 - Don't default to cards, hero marquees, decorative gradients, ornamental vectors, generic icon grids, or visible grid overlays.
 - Don't stretch editorial copy across the full available field.
 - Don't use orange as a broad theme.
 - Don't treat each channel as a separate brand.
+- Don't produce a catalog of components, principles, states, or variants when one composed example can prove the direction.

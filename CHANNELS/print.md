@@ -1,8 +1,10 @@
 # Print Channel
 
+> Optional production reference. This file does not define a separate design language. Start with `../DESIGN.md`; use this only for physical-production details.
+
 Use this channel for printed collateral, PDFs intended for print, posters, one-sheets, brochures, leave-behinds, booklets, packaging concepts, and physical production.
 
-Read `DESIGN.md` and `BRAND.md` first. This file translates those foundations into print work.
+Use this file after `DESIGN.md` when the task needs detailed print-production guidance.
 
 ## Print Mindset
 
@@ -79,7 +81,7 @@ For repeated interior pages:
 - Give the header breathing room before the first content. Interior pages can use slightly less space than the cover, but should still feel deliberate.
 - Increase space before each new section title so sections do not blur together.
 - Use smaller, readable document type rather than oversized marketing type. Body, table, metadata, and signature text should remain normal tracking.
-- Let thin horizontal rules, spacing, and alignment create structure. Avoid decorative accent bars unless the accent itself carries meaning.
+- Let neutral thin horizontal rules, spacing, and alignment create structure. Never use orange accent bars, rules, stripes, rails, dividers, underlines, or edge strips, even when emphasis is needed.
 
 For tables:
 

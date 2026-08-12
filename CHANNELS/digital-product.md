@@ -1,8 +1,10 @@
 # Digital Product Channel
 
+> Optional production reference. This file does not define a separate design language. Start with `../DESIGN.md`; use this only for implementation and interaction details.
+
 Use this channel for UI/UX, websites, web apps, dashboards, HTML/CSS, product surfaces, prototypes, and shareable static pages.
 
-Read `DESIGN.md` and `BRAND.md` first. For MCMDS-specific, technical, artifact-led, or evidence-led work, also read `CREATIVE-DIRECTION.md`. This file translates those foundations into interactive digital work.
+Use this file after `DESIGN.md` when the task needs detailed interaction or web-production guidance.
 
 ## Product Thesis
 
@@ -258,7 +260,7 @@ For portfolio, case study, about, or brand pages:
 - Make the subject obvious in the first viewport.
 - Use sparse section titles, confident statements, and a few sharp paragraphs.
 - Structure capabilities or services as quiet list groups rather than colorful feature cards.
-- Use a small orange rule or mark to punctuate important transitions.
+- Use spacing, tone, type, imagery, or a compact non-linear mark to punctuate important transitions. Never use an orange bar, rule, stripe, rail, divider, underline, or edge strip.
 
 For project status pages, reports, dashboards, and operational tools, prioritize clarity. Lead with a title, snapshot/date metadata, and top-level totals. Use clean tables instead of decorative chart widgets unless a chart adds real value. Preserve density where repeated use matters.
 

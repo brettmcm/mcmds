@@ -62,7 +62,7 @@ Reference accents:
 
 Usage:
 
-- Use warm orange for the core MCM signal: emphasis, active state, critical mark, transition rule, alert, motion, heat, or focus.
+- Use warm orange for the core MCM signal: emphasis, active state, compact non-linear critical marks, alert, motion, heat, or focus. Never express it as a bar, rule, stripe, rail, divider, underline, edge strip, or transition line.
 - Use acid lime for technical status, performance, energy, power, or system-readout emphasis.
 - Use cyan for screen glow, cold electronic atmosphere, or ambient light.
 - Use green for success, field imagery, research/evidence contexts, or natural/atmospheric counterpoint.
@@ -116,7 +116,7 @@ Use a restrained technical vocabulary:
 - Small status dots, glyphs, arrows, counters, coordinates, and timestamps.
 - Rectangular panels only where they improve comprehension, repeated structure, tool behavior, or dashboard use.
 - Circular apertures, lenses, discs, ports, and registration marks.
-- Hard signal bars, LED-like strips, and narrow color blocks.
+- Compact signal dots, apertures, glyphs, and bounded status marks. Do not use orange bars, LED-like orange strips, narrow orange blocks, or other linear orange accents.
 - Transparent overlays and layer reveals.
 
 If a shape does not measure, reveal, frame, route, signal, group, or clarify, remove it.
