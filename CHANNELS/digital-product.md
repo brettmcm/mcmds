@@ -1,8 +1,10 @@
 # Digital Product Channel
 
+> Optional production reference. This file does not define a separate design language. Start with `../DESIGN.md`; use this only for implementation and interaction details.
+
 Use this channel for UI/UX, websites, web apps, dashboards, HTML/CSS, product surfaces, prototypes, and shareable static pages.
 
-Read `DESIGN.md` and `BRAND.md` first. For MCMDS-specific, technical, artifact-led, or evidence-led work, also read `CREATIVE-DIRECTION.md`. This file translates those foundations into interactive digital work.
+Use this file after `DESIGN.md` when the task needs detailed interaction or web-production guidance.
 
 ## Product Thesis
 
@@ -31,6 +33,8 @@ Use a quiet tonal ladder to communicate nesting and task priority:
 - Active surface: the current location or selected object, using a clear tonal step or atomic inversion.
 
 Adjacent surfaces should remain distinguishable without looking striped or boxed. Small gutters—often `3px`, `4px`, or `8px`—can reveal the canvas between regions and communicate structure without divider lines.
+
+For native or wrapped desktop apps, treat the title bar as part of the continuous canvas. Make title-bar chrome transparent and place it over the same appearance-dependent canvas role used by the app content. The backing surface must follow light and dark appearance changes; do not paint the title bar with a fixed black, white, or system-grey fill. Keep standard window controls usable, remove title-bar separators when they create a false boundary, and verify the installed app in both appearances.
 
 Borders and dividers are exceptions. Add one only when surface, spacing, alignment, and contrast cannot communicate the boundary, or when repeated row alignment genuinely requires it. Tables, timelines, calculation transitions, sticky headers, drag targets, and explicit comparisons are valid uses. Do not add rules merely to make a quiet composition feel structured.
 
@@ -68,6 +72,12 @@ Use the `mcm-` namespace for all public CSS APIs:
 Prefer names that describe role or behavior rather than appearance or a single page. For example, use `.mcm-key-data` instead of `.summary-row` and `.mcm-dialog` instead of `.schedule-dialog`. Quote-, campaign-, or project-specific composition classes remain local to that artifact.
 
 Existing short-form variables such as `--mcm-bg`, `--mcm-ink`, and `--mcm-line` remain compatibility aliases. New reusable work should use the canonical semantic tokens. Use `data-mcm-theme="light"` or `data-mcm-theme="dark"` on a bounded root when an explicit appearance is required; otherwise allow `prefers-color-scheme` to select the default.
+
+### Scrollbars
+
+MCMDS uses a quiet `3px` scrollbar with an ink-derived thumb, a `5px` window-edge inset, and a `16px` visual stop above the bottom edge. Full-window scrollbars must float above the content so switching between scrollable and non-scrollable views never changes the working width.
+
+Apply `.mcm-scroll-region--window` to the full-window scroll container and initialize it with `attachMcmFloatingScrollbar` from `../assets/mcmds.js`. The helper hides the native scrollbar, creates the fixed `.mcm-floating-scrollbar` presentation layer, synchronizes its thumb with the real scroll position, and removes the thumb when the content does not overflow. The floating layer is decorative and does not accept pointer input. Nested scroll regions retain the minimal native scrollbar treatment unless layout stability requires the floating pattern there too.
 
 ### Component inventory
 
@@ -258,7 +268,7 @@ For portfolio, case study, about, or brand pages:
 - Make the subject obvious in the first viewport.
 - Use sparse section titles, confident statements, and a few sharp paragraphs.
 - Structure capabilities or services as quiet list groups rather than colorful feature cards.
-- Use a small orange rule or mark to punctuate important transitions.
+- Use spacing, tone, type, imagery, or a compact non-linear mark to punctuate important transitions. Never use an orange bar, rule, stripe, rail, divider, underline, or edge strip.
 
 For project status pages, reports, dashboards, and operational tools, prioritize clarity. Lead with a title, snapshot/date metadata, and top-level totals. Use clean tables instead of decorative chart widgets unless a chart adds real value. Preserve density where repeated use matters.
 

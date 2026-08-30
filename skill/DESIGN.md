@@ -15,33 +15,6 @@ Install `@brettmcm/mcmds` and import `@brettmcm/mcmds/styles.css`. Compose expor
 - Shared spacing is 4, 8, 12, 16, 24, 36, 48, and 72px. Controls are 36px; compact rows are 58px.
 - Verify light, dark, narrow, keyboard focus, selection, and reduced motion.
 
-## Dashboard composition contract
-
-- Use Ledger's compact hierarchy as the dashboard baseline: quiet context, restrained title, bounded key data, surface-selected tabs, and direct record rows.
-- Compose `MCMProvider > Workspace > TitleBar > KeyDataGroup > Tabs > RecordList` before introducing product-specific structure.
-- Key data is a bounded summary region, not a hero. It must remain fully visible at 1280px, 800px, and 560px without horizontal page overflow.
-- Keep context casing and title scale consistent across sibling apps. Product content may differ; shell hierarchy may not.
-- Use exported controls and floating layers before local equivalents. Product CSS may arrange a component but must not depend on its private child elements.
-- An exception requires an adjacent `mcmds-exception` comment with the product need and why composition or a documented variant is insufficient.
-
-## Dashboard layout tokens
-
-- `--mcm-layout-gutter` — responsive 20–44px canvas inset; 16px at the narrow breakpoint.
-- `--mcm-layout-canvas-top` — 36px desktop top inset; `--mcm-layout-canvas-top-narrow` is 24px.
-- `--mcm-layout-canvas-bottom` — 72px final canvas inset.
-- `--mcm-layout-title-summary` — 36px from title bar to key data.
-- `--mcm-layout-summary-navigation` — 24px from key data to view navigation.
-- `--mcm-layout-navigation-content` — 24px from navigation to primary content.
-- One narrow breakpoint, 760px, governs gutters and the two-plus-one key-data layout. One compact breakpoint, 480px, stacks key data.
-
-Products must consume these semantic tokens or the shared components that own them. Product-local shell margins, padding, and alternate dashboard breakpoints are conformance errors.
-
-## Release checks
-
-- Pin one exact MCMDS package version across sibling apps. Ranges such as `^0.x` do not establish a shared contract.
-- The source, generated manifest, built package, Storybook, and skill copy must be produced from the same revision.
-- Run the MCMDS audit and visual matrix before handoff: light/dark at 1280px, 800px, and 560px; keyboard focus; selection; empty/loading/error states; reduced motion.
-
 ## Shared components
 
 - **MCMProvider** — Theme and system boundary.

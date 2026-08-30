@@ -1,130 +1,49 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MCM Design Co. web style and component showcase">
-    <title>MCMDS web system showcase</title>
-    <link rel="stylesheet" href="https://use.typekit.net/shq4xoc.css">
-    <link rel="stylesheet" href="../assets/mcmds.css">
-    <link rel="stylesheet" href="showcase.css">
-    <script src="showcase.js" defer></script>
-  </head>
-  <body>
-    <div class="showcase" data-review-mode="split">
-      <header class="showcase__header">
-        <div class="showcase__brand">
-          <strong>MCM Design Co.</strong>
-          <span>Web system · alpha</span>
-        </div>
-        <div>
-          <span class="showcase__mode-label" id="review-mode-label">Review mode</span>
-          <div class="showcase__modes" role="group" aria-labelledby="review-mode-label">
-            <button class="showcase__mode" type="button" data-review-mode="light" aria-pressed="false">Light</button>
-            <button class="showcase__mode" type="button" data-review-mode="dark" aria-pressed="false">Dark</button>
-            <button class="showcase__mode" type="button" data-review-mode="split" aria-pressed="true">Split</button>
-          </div>
-        </div>
-      </header>
+<html lang="en" data-mcm-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MCMDS</title>
+  <link rel="stylesheet" href="https://use.typekit.net/shq4xoc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/mcmds.css">
+  <link rel="stylesheet" href="./showcase.css">
+</head>
+<body>
+  <main>
+    <header>
+      <strong>MCMDS</strong>
+      <button class="theme" type="button" aria-label="Switch to dark theme">
+        <span aria-hidden="true"></span>
+        <b>Light</b>
+      </button>
+    </header>
 
-      <main>
-        <section class="showcase__intro" aria-labelledby="page-title">
-          <p class="showcase__mode-label">Signal / evidence layer · July 2026</p>
-          <h1 class="mcm-type-title" id="page-title">A working system for clear, exact digital products.</h1>
-          <p>This reference turns the MCMDS foundations and focused quote patterns into portable semantic HTML and CSS. Each specimen includes its production syntax so refinements can happen one decision at a time.</p>
-          <nav class="showcase__nav" aria-label="Showcase sections">
-            <a href="#color">Color</a><a href="#type">Typography</a><a href="#layout">Layout</a><a href="#controls">Controls</a><a href="#data">Data</a><a href="#tables">Tables</a><a href="#dialogs">Dialogs</a><a href="#states">States</a>
-          </nav>
-        </section>
+    <section>
+      <div class="statement">
+        <h1>Less,<br>but clear.</h1>
+        <i aria-hidden="true"></i>
+      </div>
 
-        <section class="showcase__section" id="color" aria-labelledby="color-title">
-          <div class="showcase__section-heading"><h2 id="color-title">Color roles</h2><p>Canvas and interaction use true endpoints. A compact tonal ladder establishes product hierarchy before borders or type-size changes. Orange signals the brand or a semantic event; it is not the default interaction color.</p></div>
-          <div class="showcase__pair">
-            <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>Light appearance</span><span>data-mcm-theme="light"</span></div><div class="showcase__swatches">
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-canvas)"></div><span class="showcase__swatch-name">Canvas</span><span class="showcase__swatch-value">--mcm-color-canvas</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-surface-subtle)"></div><span class="showcase__swatch-name">Subtle surface</span><span class="showcase__swatch-value">--mcm-color-surface-subtle</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-surface)"></div><span class="showcase__swatch-name">Surface</span><span class="showcase__swatch-value">--mcm-color-surface</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-ink)"></div><span class="showcase__swatch-name">Ink</span><span class="showcase__swatch-value">--mcm-color-ink</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-muted)"></div><span class="showcase__swatch-name">Muted</span><span class="showcase__swatch-value">--mcm-color-muted</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-accent)"></div><span class="showcase__swatch-name">Accent</span><span class="showcase__swatch-value">--mcm-color-accent</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-success)"></div><span class="showcase__swatch-name">Success</span><span class="showcase__swatch-value">--mcm-color-success</span></div>
-            </div></div>
-            <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Dark appearance</span><span>data-mcm-theme="dark"</span></div><div class="showcase__swatches">
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-canvas)"></div><span class="showcase__swatch-name">Canvas</span><span class="showcase__swatch-value">--mcm-color-canvas</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-surface-subtle)"></div><span class="showcase__swatch-name">Subtle surface</span><span class="showcase__swatch-value">--mcm-color-surface-subtle</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-surface)"></div><span class="showcase__swatch-name">Surface</span><span class="showcase__swatch-value">--mcm-color-surface</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-ink)"></div><span class="showcase__swatch-name">Ink</span><span class="showcase__swatch-value">--mcm-color-ink</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-muted)"></div><span class="showcase__swatch-name">Muted</span><span class="showcase__swatch-value">--mcm-color-muted</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-accent)"></div><span class="showcase__swatch-name">Accent</span><span class="showcase__swatch-value">--mcm-color-accent</span></div>
-              <div><div class="showcase__swatch-color" style="--swatch:var(--mcm-color-success)"></div><span class="showcase__swatch-name">Success</span><span class="showcase__swatch-value">--mcm-color-success</span></div>
-            </div></div>
-          </div>
-        </section>
-
-        <section class="showcase__section" id="type" aria-labelledby="type-title">
-          <div class="showcase__section-heading"><h2 id="type-title">Typography</h2><p>Indivisible carries expression, Inter carries product work, and Departure Mono carries genuine technical or financial data. Product contexts compress these roles into a tight range.</p></div>
-          <div class="showcase__pair">
-            <div class="showcase__theme mcm-product" data-mcm-theme="light"><div class="showcase__theme-label"><span>Compact product roles</span><span>Light · .mcm-product</span></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-display</code><p class="mcm-type-display">Signal becomes structure</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-title</code><p class="mcm-type-title">Production review</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-heading</code><p class="mcm-type-heading">Schedule and pricing</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-lead</code><p class="mcm-type-lead">A measured lead explains the decision without competing with it.</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-body</code><p class="mcm-type-body">Product body supports dense reading, forms, tables, and operational workflows.</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-label</code><p class="mcm-type-label">Workspace label</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-label-heavy</code><p class="mcm-type-label-heavy">Grand total label</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-meta</code><p class="mcm-type-meta">Updated July 22 at 07:12</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-data</code><p class="mcm-type-data">MCM-042 · $21,572.50</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-data-large</code><p class="mcm-type-data-large">$21,572.50</p></div>
-            </div>
-            <div class="showcase__theme mcm-product" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Compact product roles</span><span>Dark · .mcm-product</span></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-display</code><p class="mcm-type-display">Signal becomes structure</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-title</code><p class="mcm-type-title">Production review</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-heading</code><p class="mcm-type-heading">Schedule and pricing</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-lead</code><p class="mcm-type-lead">A measured lead explains the decision without competing with it.</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-body</code><p class="mcm-type-body">Product body supports dense reading, forms, tables, and operational workflows.</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-label</code><p class="mcm-type-label">Workspace label</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-label-heavy</code><p class="mcm-type-label-heavy">Grand total label</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-meta</code><p class="mcm-type-meta">Updated July 22 at 07:12</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-data</code><p class="mcm-type-data">MCM-042 · $21,572.50</p></div>
-              <div class="showcase__type-row"><code class="showcase__syntax">.mcm-type-data-large</code><p class="mcm-type-data-large">$21,572.50</p></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="showcase__section" id="layout" aria-labelledby="layout-title"><div class="showcase__section-heading"><h2 id="layout-title">Layout primitives</h2><p>Use one stable shell and local relationships. The 980px operational workspace is the preferred quote, schedule, review, and decision surface.</p></div><div class="showcase__pair">
-          <div class="showcase__theme mcm-product" data-mcm-theme="light"><div class="showcase__theme-label"><span>Focused workspace</span><span>.mcm-shell .mcm-shell--operational</span></div><div class="mcm-stack mcm-surface--subtle" style="padding:16px;border-radius:var(--mcm-radius-ui)"><span class="showcase__syntax">.mcm-surface--subtle</span><div class="mcm-split"><div><p class="mcm-type-label">Primary working area</p><p class="mcm-type-body">A dominant reading plane with aligned edges.</p></div><span class="mcm-status mcm-status--active">In review</span></div><div class="mcm-cluster"><span class="mcm-pill">Surface first</span><span class="mcm-pill">Compact grouping</span><span class="mcm-pill">980px maximum</span></div></div></div>
-          <div class="showcase__theme mcm-product" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Focused workspace</span><span>.mcm-shell .mcm-shell--operational</span></div><div class="mcm-stack mcm-surface--subtle" style="padding:16px;border-radius:var(--mcm-radius-ui)"><span class="showcase__syntax">.mcm-surface--subtle</span><div class="mcm-split"><div><p class="mcm-type-label">Primary working area</p><p class="mcm-type-body">A dominant reading plane with aligned edges.</p></div><span class="mcm-status mcm-status--active">In review</span></div><div class="mcm-cluster"><span class="mcm-pill">Surface first</span><span class="mcm-pill">Compact grouping</span><span class="mcm-pill">980px maximum</span></div></div></div>
-        </div></section>
-
-        <section class="showcase__section" id="controls" aria-labelledby="controls-title"><div class="showcase__section-heading"><h2 id="controls-title">Controls</h2><p>Interaction defaults to black or white. Accent and destructive variants are deliberate exceptions. Every field has a visible label and stable state treatment.</p></div><div class="showcase__pair">
-          <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>Controls</span><span>Light</span></div><div class="showcase__specimen"><code class="showcase__syntax">.mcm-button + modifiers</code><div class="showcase__button-row"><button class="mcm-button mcm-button--primary">Primary</button><button class="mcm-button mcm-button--secondary">Secondary</button><button class="mcm-button mcm-button--quiet">Quiet action</button><button class="mcm-button mcm-button--accent">Brand action</button><button class="mcm-button mcm-button--destructive">Delete</button><button class="mcm-button mcm-button--small">Small</button><button class="mcm-button" disabled>Disabled</button></div></div><div class="showcase__specimen"><code class="showcase__syntax">.mcm-field .mcm-input .mcm-select</code><div class="showcase__control-grid"><label class="mcm-field"><span class="mcm-field__label">Project name</span><input class="mcm-input" value="Signal archive"><span class="mcm-field__hint">Used in document headers.</span></label><label class="mcm-field"><span class="mcm-field__label">Status</span><select class="mcm-select"><option>In review</option><option>Approved</option></select></label><label class="mcm-choice"><input type="checkbox" checked> Include production notes</label><label class="mcm-choice"><input type="radio" name="theme-light" checked> Use current estimate</label></div></div></div>
-          <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Controls</span><span>Dark</span></div><div class="showcase__specimen"><code class="showcase__syntax">.mcm-button + modifiers</code><div class="showcase__button-row"><button class="mcm-button mcm-button--primary">Primary</button><button class="mcm-button mcm-button--secondary">Secondary</button><button class="mcm-button mcm-button--quiet">Quiet action</button><button class="mcm-button mcm-button--accent">Brand action</button><button class="mcm-button mcm-button--destructive">Delete</button><button class="mcm-button mcm-button--small">Small</button><button class="mcm-button" disabled>Disabled</button></div></div><div class="showcase__specimen"><code class="showcase__syntax">.mcm-field .mcm-input .mcm-select</code><div class="showcase__control-grid"><label class="mcm-field"><span class="mcm-field__label">Project name</span><input class="mcm-input" value="Signal archive"><span class="mcm-field__hint">Used in document headers.</span></label><label class="mcm-field"><span class="mcm-field__label">Status</span><select class="mcm-select"><option>In review</option><option>Approved</option></select></label><label class="mcm-choice"><input type="checkbox" checked> Include production notes</label><label class="mcm-choice"><input type="radio" name="theme-dark" checked> Use current estimate</label></div></div></div>
-        </div></section>
-
-        <section class="showcase__section" id="data" aria-labelledby="data-title"><div class="showcase__section-heading"><h2 id="data-title">Key data</h2><p>Individual key-data items sit side by side while each label, value, and action remains vertically stacked. Secondary detail stays available without adding cards.</p></div><div class="showcase__pair">
-          <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>Summary</span><span>.mcm-key-data</span></div><div class="mcm-key-data"><div class="mcm-key-data__item"><span class="mcm-key-data__label">Project</span><strong class="mcm-key-data__value">Field report 04</strong><button class="mcm-key-data__action">View brief</button></div><div class="mcm-key-data__item"><span class="mcm-key-data__label">Total</span><strong class="mcm-key-data__value">$21,572.50</strong></div><div class="mcm-key-data__item"><span class="mcm-key-data__label">Delivery</span><strong class="mcm-key-data__value">October 30</strong><button class="mcm-key-data__action" data-dialog-target="schedule-light">View schedule</button></div></div></div>
-          <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Summary</span><span>.mcm-key-data</span></div><div class="mcm-key-data"><div class="mcm-key-data__item"><span class="mcm-key-data__label">Project</span><strong class="mcm-key-data__value">Field report 04</strong><button class="mcm-key-data__action">View brief</button></div><div class="mcm-key-data__item"><span class="mcm-key-data__label">Total</span><strong class="mcm-key-data__value">$21,572.50</strong></div><div class="mcm-key-data__item"><span class="mcm-key-data__label">Delivery</span><strong class="mcm-key-data__value">October 30</strong><button class="mcm-key-data__action" data-dialog-target="schedule-dark">View schedule</button></div></div></div>
-        </div></section>
-
-        <section class="showcase__section" id="tables" aria-labelledby="tables-title"><div class="showcase__section-heading"><h2 id="tables-title">Tables and pricing</h2><p>Continuous tables, quiet dividers, mono currency, compact inputs, and rule-separated totals preserve density without adding heavy containment.</p></div><div class="showcase__pair">
-          <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>Pricing review</span><span>.mcm-table__row--compact .mcm-table__cell--currency</span></div><div class="mcm-table-wrap"><table class="mcm-table"><thead><tr class="mcm-table__row mcm-table__row--header"><th class="mcm-table__cell mcm-table__cell--header">Item</th><th class="mcm-table__cell mcm-table__cell--header">Rate</th><th class="mcm-table__cell mcm-table__cell--header">Quantity</th><th class="mcm-table__cell mcm-table__cell--header">Amount</th></tr></thead><tbody><tr class="mcm-table__row mcm-table__row--standard"><td class="mcm-table__cell mcm-table__cell--text">Editorial design</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$185.00</td><td class="mcm-table__cell mcm-table__cell--number"><input class="mcm-number-input" type="number" aria-label="Editorial design quantity" value="24"></td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$4,440.00</td></tr><tr class="mcm-table__row mcm-table__row--selected" aria-selected="true"><td class="mcm-table__cell mcm-table__cell--text">Production support</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$140.00</td><td class="mcm-table__cell mcm-table__cell--number">12</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$1,680.00</td></tr><tr class="mcm-table__row mcm-table__row--compact"><td class="mcm-table__cell mcm-table__cell--text">Archive preparation</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$760.00</td><td class="mcm-table__cell mcm-table__cell--number">1</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$760.00</td></tr></tbody></table></div><div class="mcm-totals"><div class="mcm-total-row"><span>Subtotal</span><strong class="mcm-currency">$6,880.00</strong></div><div class="mcm-total-row mcm-total-row--grand"><span>Total estimate</span><strong class="mcm-currency">$6,880.00</strong></div></div></div>
-          <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Pricing review</span><span>.mcm-table__row--compact .mcm-table__cell--currency</span></div><div class="mcm-table-wrap"><table class="mcm-table"><thead><tr class="mcm-table__row mcm-table__row--header"><th class="mcm-table__cell mcm-table__cell--header">Item</th><th class="mcm-table__cell mcm-table__cell--header">Rate</th><th class="mcm-table__cell mcm-table__cell--header">Quantity</th><th class="mcm-table__cell mcm-table__cell--header">Amount</th></tr></thead><tbody><tr class="mcm-table__row mcm-table__row--standard"><td class="mcm-table__cell mcm-table__cell--text">Editorial design</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$185.00</td><td class="mcm-table__cell mcm-table__cell--number"><input class="mcm-number-input" type="number" aria-label="Editorial design quantity dark" value="24"></td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$4,440.00</td></tr><tr class="mcm-table__row mcm-table__row--selected" aria-selected="true"><td class="mcm-table__cell mcm-table__cell--text">Production support</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$140.00</td><td class="mcm-table__cell mcm-table__cell--number">12</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$1,680.00</td></tr><tr class="mcm-table__row mcm-table__row--compact"><td class="mcm-table__cell mcm-table__cell--text">Archive preparation</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$760.00</td><td class="mcm-table__cell mcm-table__cell--number">1</td><td class="mcm-table__cell mcm-table__cell--currency mcm-currency">$760.00</td></tr></tbody></table></div><div class="mcm-totals"><div class="mcm-total-row"><span>Subtotal</span><strong class="mcm-currency">$6,880.00</strong></div><div class="mcm-total-row mcm-total-row--grand"><span>Total estimate</span><strong class="mcm-currency">$6,880.00</strong></div></div></div>
-        </div></section>
-
-        <section class="showcase__section" id="dialogs" aria-labelledby="dialogs-title"><div class="showcase__section-heading"><h2 id="dialogs-title">Dialogs and specifications</h2><p>Secondary detail stays out of the primary scan path. Native dialogs retain keyboard behavior, Escape dismissal, and focus restoration.</p></div><div class="showcase__pair">
-          <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>Secondary detail</span><span>.mcm-dialog .mcm-spec-list</span></div><button class="mcm-button mcm-button--secondary" data-dialog-target="spec-light">View specifications</button><dialog class="mcm-dialog" id="spec-light" data-mcm-theme="light" aria-labelledby="spec-light-title"><div class="mcm-dialog__header"><div><p class="mcm-type-meta">Artifact MCM-042</p><h3 class="mcm-type-heading" id="spec-light-title">Production specifications</h3></div><button class="mcm-button mcm-button--quiet" data-dialog-close>Close</button></div><div class="mcm-dialog__body"><dl class="mcm-spec-list"><div class="mcm-spec-list__row"><dt>Format</dt><dd>210 × 280 mm</dd></div><div class="mcm-spec-list__row"><dt>Extent</dt><dd>128 pages plus cover</dd></div><div class="mcm-spec-list__row"><dt>Binding</dt><dd>Section sewn, exposed spine</dd></div></dl></div></dialog></div>
-          <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>Secondary detail</span><span>.mcm-dialog .mcm-spec-list</span></div><button class="mcm-button mcm-button--secondary" data-dialog-target="spec-dark">View specifications</button><dialog class="mcm-dialog" id="spec-dark" data-mcm-theme="dark" aria-labelledby="spec-dark-title"><div class="mcm-dialog__header"><div><p class="mcm-type-meta">Artifact MCM-042</p><h3 class="mcm-type-heading" id="spec-dark-title">Production specifications</h3></div><button class="mcm-button mcm-button--quiet" data-dialog-close>Close</button></div><div class="mcm-dialog__body"><dl class="mcm-spec-list"><div class="mcm-spec-list__row"><dt>Format</dt><dd>210 × 280 mm</dd></div><div class="mcm-spec-list__row"><dt>Extent</dt><dd>128 pages plus cover</dd></div><div class="mcm-spec-list__row"><dt>Binding</dt><dd>Section sewn, exposed spine</dd></div></dl></div></dialog></div>
-        </div></section>
-
-        <section class="showcase__section" id="states" aria-labelledby="states-title"><div class="showcase__section-heading"><h2 id="states-title">System states</h2><p>Loading preserves dimensions. Empty and error states explain what happened and provide the most useful next action without decorative illustration.</p></div><div class="showcase__pair">
-          <div class="showcase__theme" data-mcm-theme="light"><div class="showcase__theme-label"><span>State examples</span><span>.mcm-state .mcm-notice</span></div><div class="showcase__state-grid"><div class="mcm-state"><div class="mcm-loading-line" aria-label="Loading"></div><p class="mcm-state__body">Loading current production data…</p></div><div class="mcm-state"><h3 class="mcm-state__title">No linked artifacts</h3><p class="mcm-state__body">Attach source material to make the decision traceable.</p><button class="mcm-button mcm-button--small">Attach artifact</button></div><div class="mcm-notice mcm-notice--success">Estimate saved and ready for review.</div><div class="mcm-notice mcm-notice--error">The source file could not be reached. Check the link and try again.</div></div></div>
-          <div class="showcase__theme" data-mcm-theme="dark"><div class="showcase__theme-label"><span>State examples</span><span>.mcm-state .mcm-notice</span></div><div class="showcase__state-grid"><div class="mcm-state"><div class="mcm-loading-line" aria-label="Loading"></div><p class="mcm-state__body">Loading current production data…</p></div><div class="mcm-state"><h3 class="mcm-state__title">No linked artifacts</h3><p class="mcm-state__body">Attach source material to make the decision traceable.</p><button class="mcm-button mcm-button--small">Attach artifact</button></div><div class="mcm-notice mcm-notice--success">Estimate saved and ready for review.</div><div class="mcm-notice mcm-notice--error">The source file could not be reached. Check the link and try again.</div></div></div>
-        </div></section>
-
-        <dialog class="mcm-dialog" id="schedule-light" data-mcm-theme="light" aria-labelledby="schedule-light-title"><div class="mcm-dialog__header"><h3 class="mcm-type-heading" id="schedule-light-title">Production schedule</h3><button class="mcm-button mcm-button--quiet" data-dialog-close>Close</button></div><div class="mcm-dialog__body"><div class="mcm-timeline"><div class="mcm-timeline__item"><span class="mcm-timeline__date">August 18</span><span class="mcm-timeline__label">Files supplied</span></div><div class="mcm-timeline__item"><span class="mcm-timeline__date">September 24</span><span class="mcm-timeline__label">Production approved</span></div><div class="mcm-timeline__item"><span class="mcm-timeline__date">October 30</span><span class="mcm-timeline__label">Final delivery</span></div></div></div></dialog>
-        <dialog class="mcm-dialog" id="schedule-dark" data-mcm-theme="dark" aria-labelledby="schedule-dark-title"><div class="mcm-dialog__header"><h3 class="mcm-type-heading" id="schedule-dark-title">Production schedule</h3><button class="mcm-button mcm-button--quiet" data-dialog-close>Close</button></div><div class="mcm-dialog__body"><div class="mcm-timeline"><div class="mcm-timeline__item"><span class="mcm-timeline__date">August 18</span><span class="mcm-timeline__label">Files supplied</span></div><div class="mcm-timeline__item"><span class="mcm-timeline__date">September 24</span><span class="mcm-timeline__label">Production approved</span></div><div class="mcm-timeline__item"><span class="mcm-timeline__date">October 30</span><span class="mcm-timeline__label">Final delivery</span></div></div></div></dialog>
-      </main>
-      <footer class="showcase__footer">MCMDS web system · semantic HTML/CSS reference · source: assets/mcmds.css</footer>
-    </div>
-  </body>
+      <div class="work" aria-label="Example work">
+        <p>Current work</p>
+        <button type="button">
+          <span>Define the field</span>
+          <small>Complete</small>
+        </button>
+        <button class="is-selected" type="button" aria-pressed="true">
+          <span>Remove the extra layer</span>
+          <small>Selected</small>
+        </button>
+        <button type="button">
+          <span>Keep only what helps</span>
+          <small>Next</small>
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="./showcase.js"></script>
+</body>
 </html>

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "font": { "family": { "$type": "fontFamily", "ui": { "$value": ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] }, "display": { "$value": ["Indivisible", "ui-sans-serif", "system-ui", "sans-serif"] }, "mono": { "$value": ["Departure Mono", "SFMono-Regular", "Consolas", "monospace"] } }, "size": { "$type": "dimension", "meta": { "$value": { "value": 10, "unit": "px" } }, "label": { "$value": { "value": 11, "unit": "px" } }, "secondary": { "$value": { "value": 12, "unit": "px" } }, "primary": { "$value": { "value": 13, "unit": "px" } }, "body": { "$value": { "value": 14, "unit": "px" } }, "heading": { "$value": { "value": 18, "unit": "px" } }, "title": { "$value": { "value": 27, "unit": "px" } } }, "weight": { "$type": "fontWeight", "regular": { "$value": 400 }, "medium": { "$value": 500 }, "semibold": { "$value": 600 } } },
+  "line-height": { "$type": "dimension", "label": { "$value": { "value": 15, "unit": "px" } }, "ui": { "$value": { "value": 18, "unit": "px" } }, "body": { "$value": { "value": 21, "unit": "px" } }, "heading": { "$value": { "value": 22, "unit": "px" } }, "title": { "$value": { "value": 32, "unit": "px" } } },
+  "tracking": { "$type": "dimension", "normal": { "$value": { "value": 0, "unit": "px" } }, "title": { "$value": { "value": -0.675, "unit": "px" } } }
+}

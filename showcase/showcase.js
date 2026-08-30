@@ -1,29 +1,24 @@
-const root = document.querySelector(".showcase");
-const modeButtons = document.querySelectorAll("[data-review-mode]");
-const storedMode = localStorage.getItem("mcmds-review-mode");
-const validModes = new Set(["light", "dark", "split"]);
+const root = document.documentElement;
+const theme = document.querySelector(".theme");
 
-function setReviewMode(mode) {
-  const nextMode = validModes.has(mode) ? mode : "split";
-  root.dataset.reviewMode = nextMode;
-  modeButtons.forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.reviewMode === nextMode));
-  });
-  localStorage.setItem("mcmds-review-mode", nextMode);
+function setTheme(value) {
+  root.dataset.mcmTheme = value;
+  theme.querySelector("b").textContent = value === "dark" ? "Dark" : "Light";
+  theme.setAttribute("aria-label", `Switch to ${value === "dark" ? "light" : "dark"} theme`);
+  localStorage.setItem("mcmds-showcase-theme", value);
 }
 
-modeButtons.forEach((button) => {
-  button.addEventListener("click", () => setReviewMode(button.dataset.reviewMode));
+theme.addEventListener("click", () => setTheme(root.dataset.mcmTheme === "dark" ? "light" : "dark"));
+
+document.querySelectorAll(".work button").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".work button").forEach((item) => {
+      item.classList.remove("is-selected");
+      item.setAttribute("aria-pressed", "false");
+    });
+    button.classList.add("is-selected");
+    button.setAttribute("aria-pressed", "true");
+  });
 });
 
-document.querySelectorAll("[data-dialog-target]").forEach((button) => {
-  const dialog = document.getElementById(button.dataset.dialogTarget);
-  if (!dialog) return;
-  button.addEventListener("click", () => dialog.showModal());
-});
-
-document.querySelectorAll(".mcm-dialog [data-dialog-close]").forEach((button) => {
-  button.addEventListener("click", () => button.closest("dialog").close());
-});
-
-setReviewMode(storedMode || "split");
+setTheme(localStorage.getItem("mcmds-showcase-theme") || "light");

@@ -1,8 +1,10 @@
 # Social Graphic Channel
 
+> Optional production reference. This file does not define a separate design language. Start with `../DESIGN.md`; use this only for crop, platform, and export details.
+
 Use this channel for social posts, feed graphics, carousel slides, thumbnails, announcements, campaign tiles, and small-format promotional graphics.
 
-Read `DESIGN.md` and `BRAND.md` first. This file translates those foundations into constrained digital graphics.
+Use this file after `DESIGN.md` when the task needs detailed crop, platform, or export guidance.
 
 ## Social Mindset
 
@@ -38,7 +40,7 @@ Strong crops are appropriate when they increase recognition or intensity. Do not
 Good social compositions:
 
 - One strong image plus one sharp line.
-- Large type with a small orange signal.
+- Large type with a compact non-linear orange signal. Never use an orange bar, rule, stripe, rail, divider, underline, or edge strip.
 - Quiet metadata and strong edge alignment.
 - Carousel rhythm that alternates statement, evidence, and detail.
 

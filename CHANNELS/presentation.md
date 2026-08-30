@@ -1,8 +1,10 @@
 # Presentation Channel
 
+> Optional production reference. This file does not define a separate design language. Start with `../DESIGN.md`; use this only for slide-production details.
+
 Use this channel for decks, pitch presentations, strategy presentations, slide reports, keynote-style narratives, and leave-behind slide documents.
 
-Read `DESIGN.md` and `BRAND.md` first. This file translates those foundations into slides.
+Use this file after `DESIGN.md` when the task needs detailed slide-production guidance.
 
 ## Presentation Mindset
 
@@ -53,7 +55,7 @@ For data-heavy slides:
 
 - Lead with the takeaway.
 - Use quiet labels and thin rules.
-- Use orange only to call out the most important point.
+- Use orange only to call out the most important point, and only through type, data, imagery, or a compact non-linear mark. Never use an orange bar, rule, stripe, rail, divider, underline, or edge strip.
 - Keep source notes present but subdued.
 
 ## Imagery

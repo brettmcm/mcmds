@@ -18,15 +18,19 @@ The system is not generic SaaS, not startup default, not decorative portfolio ma
 4. Keep editorial mood and practical clarity together. A piece can feel sharp without hiding the information someone came for.
 5. Preserve one personality across channels. A slide, print piece, web page, report, or social graphic should feel like the same system translated into a different medium.
 
-## Product design judgment
+## Working-field judgment
 
-Product surfaces should establish one dominant working area and demote surrounding context. Navigation, supporting panes, linked material, utilities, and status information should remain available without competing with the current task.
+Every composition should establish one dominant field and demote surrounding context. Scope is the clearest reference for this judgment: content and state sit directly on the field, while structure and controls appear only when useful. Translate that grammar across media without importing product chrome into static work.
 
 Navigation is conditional, not ceremonial. Do not add a left rail, menu, or application shell to a short linear task simply because a reference image includes one. Likewise, do not reproduce screenshot framing, window chrome, outer fields, or rounded application canvases unless the product itself requires them.
 
 Use pane proportion and controlled asymmetry to communicate priority. A narrow navigation rail, a generous editor or task area, and a quieter context or utility region can create hierarchy without oversized cards or ornamental chrome. Persistent controls belong at stable edges or corners where repeated use makes their location predictable.
 
-For product interfaces, prefer relational hierarchy over a visibly tiered composition. Let adjacent tonal surfaces, text contrast, compact grouping, and stable placement establish importance before changing font size or drawing a boundary. Most product text should occupy a narrow size range; a section does not need a larger heading merely because it is structurally nested.
+Prefer relational hierarchy over a visibly tiered composition. Let adjacent tonal surfaces, text contrast, compact grouping, stable placement, image scale, and negative space establish importance before changing font size or drawing a boundary. A section does not need a larger heading merely because it is structurally nested.
+
+Make density conditional. The resting composition should be calm. Interactive work can reveal controls through hover, focus, selection, drawers, and context menus; static work can reveal depth through captions, sequencing, folds, crops, or progressive pages. Do not show every possible layer at once.
+
+Use contrast decisively. Scope's inverse selection is a useful model: when something is active, selected, or primary, a clear foreground/background reversal is often stronger than a timid outline or tinted wash. Translate this as appropriate to ink, paper, image, and screen.
 
 Treat imagery as an active product surface or evidence aperture. It may reveal the subject, orient the user, preview material, or create a bounded first-sight signal; it should not become a decorative backdrop behind controls that need precision.
 
@@ -242,4 +246,5 @@ Don't:
 - Add a large opening moment by default.
 - Stretch editorial copy across the full available field.
 - Use orange as a broad color theme.
+- Use orange bars, rules, stripes, rails, dividers, underlines, edge strips, or other linear brand accents in any medium.
 - Treat every channel as a separate brand.
