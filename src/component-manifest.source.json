@@ -1,0 +1,32 @@
+{
+  "package": "@brettmcm/mcmds",
+  "figmaFileKey": "byecc9rbUX92o72mcyLaVW",
+  "components": [
+    { "name": "MCMProvider", "purpose": "Theme and system boundary." },
+    { "name": "Workspace", "purpose": "Continuous product canvas with the shared gutter." },
+    { "name": "Stack", "purpose": "Vertical token-spaced layout." },
+    { "name": "Inline", "purpose": "Horizontal token-spaced layout." },
+    { "name": "Button", "purpose": "Neutral, tonal, primary, or destructive action." },
+    { "name": "IconButton", "purpose": "Compact accessible icon action." },
+    { "name": "Field", "purpose": "Label, control, description, and error composition." },
+    { "name": "Input", "purpose": "Single-line text input." },
+    { "name": "Select", "purpose": "Radix-backed option selection." },
+    { "name": "Textarea", "purpose": "Multi-line input." },
+    { "name": "Checkbox", "purpose": "Boolean selection control." },
+    { "name": "Radio", "purpose": "Single choice within a group." },
+    { "name": "Tabs", "purpose": "Surface-selected view navigation without an underline." },
+    { "name": "KeyData", "purpose": "Compact label, value, and secondary fact." },
+    { "name": "KeyDataGroup", "purpose": "Responsive group of up to three key data objects." },
+    { "name": "RecordRow", "purpose": "Direct, hoverable product record." },
+    { "name": "RecordList", "purpose": "Unbordered record collection." },
+    { "name": "EmptyState", "purpose": "Concise task-region empty state." },
+    { "name": "TitleBar", "purpose": "Workspace identity and essential actions." },
+    { "name": "Dialog", "purpose": "Radix-backed centered floating decision." },
+    { "name": "Drawer", "purpose": "Vaul-backed edge drawer." },
+    { "name": "Inspector", "purpose": "Right-edge contextual detail layer." },
+    { "name": "Popover", "purpose": "Radix-backed compact floating content." },
+    { "name": "MCMToaster", "purpose": "System toast viewport." },
+    { "name": "toast", "purpose": "System toast helper." },
+    { "name": "CommandMenu", "purpose": "cmdk-backed command and search surface." }
+  ]
+}

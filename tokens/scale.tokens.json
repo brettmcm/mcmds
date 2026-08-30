@@ -1,0 +1,18 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "size": { "$type": "dimension", "control": { "$value": { "value": 36, "unit": "px" } }, "field": { "$value": { "value": 38, "unit": "px" } }, "row": { "$value": { "value": 58, "unit": "px" } }, "row-descriptive": { "$value": { "value": 68, "unit": "px" } }, "key-data": { "$value": { "value": 116, "unit": "px" } }, "inspector": { "$value": { "value": 520, "unit": "px" } } },
+  "layout": {
+    "gutter-min": { "$type": "dimension", "$value": { "value": 20, "unit": "px" } },
+    "gutter-max": { "$type": "dimension", "$value": { "value": 44, "unit": "px" } },
+    "gutter-narrow": { "$type": "dimension", "$value": { "value": 16, "unit": "px" } },
+    "content-max": { "$type": "dimension", "$value": { "value": 1440, "unit": "px" } },
+    "canvas-top": { "$type": "dimension", "$value": { "value": 36, "unit": "px" } },
+    "canvas-top-narrow": { "$type": "dimension", "$value": { "value": 24, "unit": "px" } },
+    "canvas-bottom": { "$type": "dimension", "$value": { "value": 72, "unit": "px" } },
+    "title-summary": { "$type": "dimension", "$value": { "value": 36, "unit": "px" } },
+    "summary-navigation": { "$type": "dimension", "$value": { "value": 24, "unit": "px" } },
+    "navigation-content": { "$type": "dimension", "$value": { "value": 24, "unit": "px" } },
+    "breakpoint-narrow": { "$type": "dimension", "$value": { "value": 760, "unit": "px" } },
+    "breakpoint-compact": { "$type": "dimension", "$value": { "value": 480, "unit": "px" } }
+  }
+}
